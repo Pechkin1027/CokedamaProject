@@ -9,11 +9,11 @@ export default function Collection() {
   const [group, setGroup] = useState("Bed & Bath");
 
   const urlq = {
-    Rugs: "Rugs",
-    BedNBath: "Bed & Bath",
-    Kitchen: "Kitchen",
-    Decor: "Decor",
-    HomeImprovement: "Home Improvement",
+    SnakePlants: "Snake Plants",
+    MoneyPlants: "Money Plants",
+    ChineseEvergreenVarieties: "Chinese Evergreen Varieties",
+    DumbCaneVarieties: "Dumb Cane Varieties",
+    Etc: "Etc",
   };
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);

@@ -850,3 +850,43 @@ textarea {
     padding: 5px 10px;
   }
 }
+.vision-section {
+  display: grid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.vision-section h2 {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.vision-row1,
+.vision-row2 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  /* background-color: aquamarine; */
+}
+
+.vision-box {
+  /* background-color: lightcoral; */
+  height: 400px;
+  text-align: center;
+  margin: 20px;
+}
+
+.vision-box h2 {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.vision-box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
