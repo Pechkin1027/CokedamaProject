@@ -9,10 +9,10 @@ export default function Header(props) {
     props.setSort(val);
   };
   useEffect(() => {
-    if (props.name === "HomeImprovement") {
-      setName("Home Improvement");
-    } else if (props.name === "BedNBath") {
-      setName("Bed & Bath");
+    if (props.name === "SnakePlants") {
+      setName("Snake Plants");
+    } else if (props.name === "MoneyPlants") {
+      setName("Money Plants");
     } else {
       setName(props.name);
     }

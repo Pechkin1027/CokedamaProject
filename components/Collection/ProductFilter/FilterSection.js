@@ -19,11 +19,11 @@ export default function FilterSection({
     "Over $200",
   ];
   let categories = [
-    "Bed & Bath",
-    "Kitchen",
-    "Decor",
-    "Rugs",
-    "Home Improvement",
+    "Snake Plants",
+    "Money Plants",
+    "Chinese Evergreen Varieties",
+    "Dumb Cane Varieties",
+    "Etc",
   ];
 
   return (

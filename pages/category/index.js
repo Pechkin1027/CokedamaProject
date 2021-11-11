@@ -6,7 +6,7 @@ import MainSection from "../../components/Collection/MainSection";
 
 export default function Collection() {
   const [sort, setSort] = useState("");
-  const [group, setGroup] = useState("Bed & Bath");
+  const [group, setGroup] = useState("Snake Plants");
 
   const urlq = {
     SnakePlants: "Snake Plants",

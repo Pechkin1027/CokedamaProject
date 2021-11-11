@@ -234,7 +234,7 @@ const Category = {
   ],
   "Chinese Evergreen Varieties": [AllProducts[13], AllProducts[14]],
   "Dumb Cane Varieties": [AllProducts[15]],
-  "Etc.": [AllProducts[16], AllProducts[0]],
+  Etc: [AllProducts[16], AllProducts[0]],
 };
 
 export default Category;
