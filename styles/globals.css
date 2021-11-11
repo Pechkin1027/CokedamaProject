@@ -898,4 +898,10 @@ textarea {
 
 .facebook H1{
   padding-top: 3px;
+  text-decoration: none;
+  color: white;
+}
+
+.fbLink{
+  text-decoration: none;
 }

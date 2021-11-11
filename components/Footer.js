@@ -17,10 +17,12 @@ const Footer = () => {
           </Col1>
           <Col2>
             <InnerDiv1>
-              <div class = "facebook">
-                <img src="Facebook.png" width = "25" height = "25"/>
-                <H1>https://www.facebook.com/cokedamainteriorplantscaping</H1>
-              </div>
+              <a href = "https://www.facebook.com/cokedamainteriorplantscaping" class = "fbLink">
+                <div class = "facebook">
+                  <img src="Facebook.png" width = "25" height = "25"/>
+                  <H1>https://www.facebook.com/cokedamainteriorplantscaping</H1>
+                </div>
+              </a>
               <H1>+94 71 412 0033</H1>
             </InnerDiv1>
           </Col2>
