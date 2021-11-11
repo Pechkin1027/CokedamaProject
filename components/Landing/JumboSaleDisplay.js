@@ -53,7 +53,7 @@ const RedTitle = styled.h1`
   font-family: Helvetica;
   font-weight: 800;
   font-size: 14px;
-  color: #ff1f2c;
+  color: #1f1d1d;
   width: 100%;
   text-align: left;
   padding-bottom: 5px;

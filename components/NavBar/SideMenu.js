@@ -46,7 +46,7 @@ const Wrapper = Styled.div`
 
 const LogoRow = Styled.div`
 width: 100%;
-background-color: #ff1f2c;
+background-color: #7a7a09;
 height: 45px;
 display: flex;
 align-items: center;
@@ -97,7 +97,7 @@ const Search = Styled.input`
 `;
 
 const Button = Styled.button`
-    background-color: #ff1f2c;
+    background-color: #7a7a09;
     height: 100%;
     width: 40px;
     display: flex;

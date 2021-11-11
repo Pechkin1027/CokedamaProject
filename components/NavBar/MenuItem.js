@@ -81,7 +81,7 @@ const Search = Styled.input`
 `;
 
 const Button = Styled.button`
-    background-color: #ff1f2c;
+    background-color: #7a7a09;
     height: 100%;
     width: 40px;
     display: flex;

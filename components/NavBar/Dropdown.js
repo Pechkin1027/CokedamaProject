@@ -68,7 +68,7 @@ const Button = styled.button`
   position: absolute;
   right: 0;
   @media ${(props) => props.theme.mobileL} {
-    background-color: #ff1f2c;
+    background-color: #7a7a09;
     color: white;
   }
   /* outline: 2px solid black; */
