@@ -126,18 +126,17 @@ export default function home() {
       </div>
       <MainCont>
         <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
-        <JumboSaleDisplay
-          img="https://i.ibb.co/tHnsvfM/Couch.jpg"
-          url="/category?type=Decor"
-          title="Home decor"
-          text="Limited time deals"
-        />
-        <JumboSaleDisplay
-          img="https://i.ibb.co/zX5km9T/021521-Rugs-Promo-Desktop.jpg"
-          url="/category?type=Rugs"
-          title="Rug Refresh"
-          text="Out with the old"
-        />
+        <div className = "goal">
+          <div className = "goalText">
+            <h2>
+              Our Goal
+            </h2>
+            <p>
+            Our mission is to promote eco-friendly interior designing and inspire people to pursue careers
+            working with plants while finding meaningful creative work to financially support them and their families. 
+            </p>
+          </div>
+        </div>
       </MainCont>
     </PageLayout>
   );

@@ -905,3 +905,25 @@ textarea {
 .fbLink{
   text-decoration: none;
 }
+
+.goal{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+  background-image: url("/Plant_Background.jpg");
+}
+
+.goalText{
+  float: right;
+  padding-right: 285px;
+  overflow: hidden;
+  width: 23%;
+  font-size: large;
+}
+
+.goalText h2{
+  font-weight: bold;
+  font-size: larger;
+  padding-bottom: 20px;
+}
