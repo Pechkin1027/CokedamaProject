@@ -10,14 +10,17 @@ export default function SideMenu(props) {
           <Logo src="/ShopflowWhite.svg" />
         </LogoRow>
         <TitleRow>Categories</TitleRow>
-        <MenuItem name="Bed & Bath" href="/category?type=BedNBath" />
-        <MenuItem name="Kitchen" href="/category?type=Kitchen" />
-        <MenuItem name="Decor" href="/category?type=Decor" />
-        <MenuItem name="Rugs" href="/category?type=Rugs" />
+        <MenuItem name="Snake Plants" href="/category?type=SnakePlants" />
+        <MenuItem name="Money Plants" href="/category?type=MoneyPlants" />
         <MenuItem
-          name="Home Improvement"
-          href="/category?type=HomeImprovement"
+          name="Chinese Evergreen Varieties"
+          href="/category?type=ChineseEvergreenVarieties"
         />
+        <MenuItem
+          name="Dumb Cane Varieties"
+          href="/category?type=DumbCaneVarieties"
+        />
+        <MenuItem name="Etc" href="/category?type=Etc" />
       </MenuContainer>
       <Overlay open={props.isOpen} onClick={() => props.onClose()} />
       {props.isOpen && (

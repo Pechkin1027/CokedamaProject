@@ -22,7 +22,7 @@ export default function CartItem({ data, updateNums, index, handleRemove }) {
               <Color>
                 {data.size} - {data.color}
               </Color>
-              <Price>${(data.price * data.quantity).toFixed(2)}</Price>
+              <Price>Rs {(data.price * data.quantity).toFixed(2)}</Price>
               <Select value={Quantity} onChange={(e) => handleChange(e)}>
                 <Option value={1}>1</Option>
                 <Option value={2}>2</Option>

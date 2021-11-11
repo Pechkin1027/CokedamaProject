@@ -5,10 +5,10 @@ export default function NavCategories(props) {
   let categories = [
     { name: "Furniture" },
     { name: "Rugs" },
-    { name: "Decor" },
-    { name: "Bed & Bath" },
+    { name: "Chinese Evergreen Varieties" },
+    { name: "Snake Plants" },
     { name: "Home Improvement" },
-    { name: "Kitchen" },
+    { name: "Money Plants" },
     { name: "Outdoor" },
     { name: "Jewelry" },
     { name: "Apparel" },

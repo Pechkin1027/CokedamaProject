@@ -61,7 +61,7 @@ function Product({ data, handleAddToCart }) {
             <AiFillStar color={data.rating > 4 ? "#f39019" : "#bfbfbf"} />
             <Reviews>{data.reviews}</Reviews>
           </Ratings>
-          <Product__Price>${data.price}</Product__Price>
+          <Product__Price>Rs {data.price}</Product__Price>
           {data.sizes.length > 0 && (
             <Size>
               <SubTitle>Size: {size}</SubTitle>

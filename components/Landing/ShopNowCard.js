@@ -10,7 +10,7 @@ const ShopNowCard = ({ data, mb }) => {
           <Img src={data.img[0]} />
         </ImgCont>
         <TextCont>
-          <H2>${data.price}</H2>
+          <H2>Rs {data.price}</H2>
           <P>{data.name}</P>
           <ButtonDiv>
             <Button>Shop Now</Button>

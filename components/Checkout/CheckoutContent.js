@@ -75,15 +75,7 @@ export default function CheckoutContent() {
               <Top>
                 <Row>
                   <Bold>({Cart.length}) Items:</Bold>
-                  <Bold>${TotalPrice.toFixed(2)}</Bold>
-                </Row>
-                <Row>
-                  <Text>Promotional Savings:</Text>
-                  <Red>$0</Red>
-                </Row>
-                <Row>
-                  <Bold>Subtotal After Discounts</Bold>
-                  <Bold>${TotalPrice.toFixed(2)}</Bold>
+                  <Bold>Rs {TotalPrice.toFixed(2)}</Bold>
                 </Row>
               </Top>
               <Bottom>
@@ -92,12 +84,8 @@ export default function CheckoutContent() {
                   <Bold>FREE</Bold>
                 </Row>
                 <Row>
-                  <Text>Estimated Tax:</Text>
-                  <Text>${(TotalPrice * 0.1).toFixed(2)}</Text>
-                </Row>
-                <Row>
                   <Large>Total:</Large>
-                  <Large>${(TotalPrice * 0.1 + TotalPrice).toFixed(2)}</Large>
+                  <Large>Rs {TotalPrice.toFixed(2)}</Large>
                 </Row>
                 {Cart.length > 0 ? (
                   <Button form="my-form" type="submit">

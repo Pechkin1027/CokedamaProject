@@ -8,7 +8,7 @@ const ProductCard = ({ data }) => {
       <Wrapper>
         <Img src={data.img[0]} />
         <TextCont>
-          <H2>${data.price}</H2>
+          <H2>Rs {data.price}</H2>
           <P>{data.name}</P>
         </TextCont>
         {Math.round(data.rating) == 5 && (

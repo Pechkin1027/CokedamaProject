@@ -69,9 +69,9 @@ export default function Navbar() {
             <Logo src={"/ShopflowLogo.svg"} />
           </LogoTag>
         </Link>
-        <SearchBar />
+        {/* <SearchBar /> */}
         <Options>
-          <NavOption type="Try" isTablet={isTablet} />
+          {/* <NavOption type="Try" isTablet={isTablet} /> */}
           <NavOption type="bell" isTablet={isTablet} isMobile={isMobile} />
           <NavOption
             type="cart"

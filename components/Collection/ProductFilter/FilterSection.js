@@ -12,11 +12,11 @@ export default function FilterSection({
   group,
 }) {
   let prices = [
-    "Under $25",
-    "$25 - $50",
-    "$50 - $100",
-    "$100 - $200",
-    "Over $200",
+    "Under Rs 25",
+    "Rs 25 - Rs 50",
+    "Rs 50 - Rs 100",
+    "Rs 100 - Rs 200",
+    "Over Rs 200",
   ];
   let categories = [
     "Snake Plants",
