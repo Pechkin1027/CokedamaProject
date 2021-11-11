@@ -13,7 +13,7 @@ export default function Product({ data }) {
       <Container>
         <InnerContainer>
           <Tag>Featured</Tag>
-          <Price>${data.price}</Price>
+          <Price>Rs {data.price}</Price>
           <Ratings>
             <AiFillStar color={data.rating > 0 ? "#f39019" : "#bfbfbf"} />
             <AiFillStar color={data.rating > 1 ? "#f39019" : "#bfbfbf"} />
