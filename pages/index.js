@@ -57,7 +57,7 @@ export default function home() {
     <PageLayout type={"HOME"}>
       <JumboSaleDisplay
         url="/category"
-        img={"https://i.ibb.co/yysmT17/31a37094e2293c1d6fcce001d50afe55.png"}
+        img="https://i.ibb.co/SdwwgF3/shutterstock-1848217732.png"
         First
       />
       <div class="vision-section">
@@ -136,6 +136,18 @@ export default function home() {
             </p>
           </div>
         </div>
+        <JumboSaleDisplay
+          img="https://i.ibb.co/mtJ73vD/shutterstock-1848217774.jpg"
+          url="/category?type=Snake+Plants"
+          title="Slogan 1"
+          text="Subtitle"
+        />
+        <JumboSaleDisplay
+          img="https://i.ibb.co/JF0N6QZ/Shop-Image.jpg"
+          url="/category?type=Rugs"
+          title="Slogan 2"
+          text="Subtitle"
+        />
       </MainCont>
     </PageLayout>
   );
