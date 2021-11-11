@@ -7,32 +7,24 @@ const Footer = () => {
       <Container>
         <UpperHalf>
           <Col1>
-            <H2>Shopflow®</H2>
+            <H2>Cokedama Plantscaping</H2>
             <P>
-              Shop and find the best online deals on everything for your home.
-              We work every day to bring you discounts on new products across
-              our entire store. Whether you're looking for memorable gifts or
-              everyday essentials, you can buy them here for less.
+              Our mission is to promote eco-friendly interior designing and
+              inspire people to pursue careers working with plants while
+              finding meaningful creative work to financially support them
+              and their families.
             </P>
           </Col1>
           <Col2>
             <InnerDiv1>
-              <H1>We Save People Money®</H1>
-              <H1>All Things Home All For Less™</H1>
-              <H1>Shop Social®</H1>
-              <H1>Daily Dig®</H1>
+              <div class = "facebook">
+                <img src="Facebook.png" width = "25" height = "25"/>
+                <H1>https://www.facebook.com/cokedamainteriorplantscaping</H1>
+              </div>
+              <H1>+94 71 412 0033</H1>
             </InnerDiv1>
-            <InnerDiv2>
-              <H1>Trusted Merchant®</H1>
-              <H1>O is the One®</H1>
-              <H1>O’®</H1>
-              <H1>Presa®</H1>
-            </InnerDiv2>
           </Col2>
         </UpperHalf>
-        <LowerHalf>
-          © Copyright 2021, Shopflow Inc. All Rights Reserved
-        </LowerHalf>
       </Container>
     </Wrapper>
   );
