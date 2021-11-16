@@ -31,7 +31,6 @@ export default function Header(props) {
 
             <Option>Price Low - High</Option>
             <Option>Price High - Low</Option>
-            <Option>Best Selling</Option>
           </Select>
         </Container>
       </Sort>

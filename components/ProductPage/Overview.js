@@ -48,14 +48,6 @@ export default function Overview({ data }) {
                   <Text>Modern &#38; Contemporary</Text>
                 </Value>
               </Row>
-              <Row>
-                <Property>
-                  <Text>Product Features</Text>
-                </Property>
-                <Value>
-                  <Text>Hypoallergenic</Text>
-                </Value>
-              </Row>
             </Specifications>
           </Column>
         </InfoContainer>

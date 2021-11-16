@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { RiArrowDownSFill } from "react-icons/ri";
 import ProductFilters from "./ProductFilters";
 import ProductsGrid from "./ProductsGrid";
 import Category from "../../data/Category";
@@ -15,29 +14,19 @@ export default function MainSection({ data, sort, setGroup, group }) {
 
   const sortArrays = async () => {
     let newArr = JSON.parse(JSON.stringify(Category[group]));
-    if (priceFilter === "Under $25") {
+    if (priceFilter === "Under Rs 1500") {
       newArr = newArr.filter((item) => {
-        return item.price < 25;
+        return item.price < 1500;
       });
     }
-    if (priceFilter === "$25 - $50") {
+    if (priceFilter === "Rs 1500 - Rs 2000") {
       newArr = newArr.filter((item) => {
-        return 25 < item.price && item.price < 50;
+        return 1500 <= item.price && item.price <= 2000;
       });
     }
-    if (priceFilter === "$50 - $100") {
+    if (priceFilter === "Over Rs 2000") {
       newArr = newArr.filter((item) => {
-        return 50 < item.price && item.price < 100;
-      });
-    }
-    if (priceFilter === "$100 - $200") {
-      newArr = newArr.filter((item) => {
-        return 100 < item.price && item.price < 200;
-      });
-    }
-    if (priceFilter === "Over $200") {
-      newArr = newArr.filter((item) => {
-        return item.price > 200;
+        return item.price > 2000;
       });
     }
     if (sort === "Price Low - High") {
@@ -48,11 +37,6 @@ export default function MainSection({ data, sort, setGroup, group }) {
     if (sort === "Price High - Low") {
       newArr = await newArr.sort((a, b) => {
         return b.price - a.price;
-      });
-    }
-    if (sort === "Best Selling") {
-      newArr = await newArr.sort((a, b) => {
-        return b.reviews - a.reviews;
       });
     }
     setFilteredData(newArr);

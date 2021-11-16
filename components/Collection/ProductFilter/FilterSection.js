@@ -11,13 +11,7 @@ export default function FilterSection({
   setGroup,
   group,
 }) {
-  let prices = [
-    "Under Rs 25",
-    "Rs 25 - Rs 50",
-    "Rs 50 - Rs 100",
-    "Rs 100 - Rs 200",
-    "Over Rs 200",
-  ];
+  let prices = ["Under Rs 1500", "Rs 1500 - Rs 2000", "Over Rs 2000"];
   let categories = [
     "Snake Plants",
     "Money Plants",

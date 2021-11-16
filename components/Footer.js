@@ -10,16 +10,19 @@ const Footer = () => {
             <H2>Cokedama Plantscaping</H2>
             <P>
               Our mission is to promote eco-friendly interior designing and
-              inspire people to pursue careers working with plants while
-              finding meaningful creative work to financially support them
-              and their families.
+              inspire people to pursue careers working with plants while finding
+              meaningful creative work to financially support them and their
+              families.
             </P>
           </Col1>
           <Col2>
             <InnerDiv1>
-              <a href = "https://www.facebook.com/cokedamainteriorplantscaping" class = "fbLink">
-                <div class = "facebook">
-                  <img src="Facebook.png" width = "25" height = "25"/>
+              <a
+                href="https://www.facebook.com/cokedamainteriorplantscaping"
+                class="fbLink"
+              >
+                <div className="facebook">
+                  <img src="Facebook.png" width="25" height="25" />
                   <H1>https://www.facebook.com/cokedamainteriorplantscaping</H1>
                 </div>
               </a>

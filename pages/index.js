@@ -19,25 +19,25 @@ export default function home() {
       name: "Snake Plants",
       description: "Sansevieria Zeylancia",
       img: "http://cokedama.herokuapp.com/media/products/2021/06/30/Picture4.jpg",
-      urlQuery: "Snake Plants",
+      urlQuery: "SnakePlants",
     },
     {
       name: "Money Plants",
       description: "Goldon Pothos",
       img: "http://cokedama.herokuapp.com/media/products/2021/06/30/Picture12.jpg",
-      urlQuery: "Money Plants",
+      urlQuery: "MoneyPlants",
     },
     {
       name: "Chinese Evergreen Varieties",
       description: "Aglaonema",
       img: "http://cokedama.herokuapp.com/media/products/2021/06/30/Picture13_WN1qRLk.jpg",
-      urlQuery: "Chinese Evergreen Varieties",
+      urlQuery: "ChineseEvergreenVarieties",
     },
     {
       name: "Dumb Cane Varieties",
       description: "Diffenbachia*",
       img: "https://i.ibb.co/xYMh8r0/CIP-P004-A0.jpg",
-      urlQuery: "Dumb Cane Varieties",
+      urlQuery: "DumbCaneVarieties",
     },
     {
       name: "Etc.",
@@ -60,10 +60,10 @@ export default function home() {
         img="https://i.ibb.co/SdwwgF3/shutterstock-1848217732.png"
         First
       />
-      <div class="vision-section">
+      <div className="vision-section">
         <h2>Our Company's Mission</h2>
-        <div class="vision-row1">
-          <div class="vision-box">
+        <div className="vision-row1">
+          <div className="vision-box">
             <img src={"Awareness.png"} />
             <h2>Awareness</h2>
             <p>
@@ -71,7 +71,7 @@ export default function home() {
               increase awareness of careers working with plants.
             </p>
           </div>
-          <div class="vision-box">
+          <div className="vision-box">
             <img src="Education.png" />
             <h2>Education</h2>
             <p>
@@ -79,7 +79,7 @@ export default function home() {
               fields about horticulture.
             </p>
           </div>
-          <div class="vision-box">
+          <div className="vision-box">
             <img src="Empower.png" />
             <h2>Empowerment</h2>
             <p>
@@ -87,7 +87,7 @@ export default function home() {
               opportunities.
             </p>
           </div>
-          <div class="vision-box">
+          <div className="vision-box">
             <img src="Partnership.png" />
             <h2>Partnerships</h2>
             <p>
@@ -96,8 +96,8 @@ export default function home() {
             </p>
           </div>
         </div>
-        <div class="vision-row2">
-          <div class="vision-box">
+        <div className="vision-row2">
+          <div className="vision-box">
             <img src="Eco Friendly.png" />
             <h2>Eco-Friendly</h2>
             <p>
@@ -105,7 +105,7 @@ export default function home() {
               advocating the use of recycled materials.
             </p>
           </div>
-          <div class="vision-box">
+          <div className="vision-box">
             <img src="Resource Dev.png" />
             <h2>Resource Development</h2>
             <p>
@@ -113,7 +113,7 @@ export default function home() {
               tips, and guides for the community.
             </p>
           </div>
-          <div class="vision-box">
+          <div className="vision-box">
             <img src="Workforce.png" />
             <h2>Workforce Developement</h2>
             <p>
@@ -125,14 +125,14 @@ export default function home() {
       </div>
       <MainCont>
         <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
-        <div className = "goal">
-          <div className = "goalText">
-            <h2>
-              Our Goal
-            </h2>
+        <div className="goal">
+          <div className="goalText">
+            <h2>Our Goal</h2>
             <p>
-            Our mission is to promote eco-friendly interior designing and inspire people to pursue careers
-            working with plants while finding meaningful creative work to financially support them and their families. 
+              Our mission is to promote eco-friendly interior designing and
+              inspire people to pursue careers working with plants while finding
+              meaningful creative work to financially support them and their
+              families.
             </p>
           </div>
         </div>
