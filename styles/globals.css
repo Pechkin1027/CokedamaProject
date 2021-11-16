@@ -911,7 +911,8 @@ textarea {
   padding-top: 100px;
   padding-bottom: 100px;
   margin-bottom: 100px;
-  background-image: url("/Plant_Background.jpg");
+  background-repeat: no-repeat;
+  background-image: url("https://i.ibb.co/mtJ73vD/shutterstock-1848217774.jpg");
 }
 
 .goalText{
