@@ -11,8 +11,8 @@ export default function Collection() {
   const urlq = {
     SnakePlants: "Snake Plants",
     MoneyPlants: "Money Plants",
-    ChineseEvergreenVarieties: "Chinese Evergreen Varieties",
-    DumbCaneVarieties: "Dumb Cane Varieties",
+    OtherKokedamaPlants: "Other Kokedama Plants",
+    AllItems: "All Items",
     Etc: "Etc",
   };
   useEffect(() => {

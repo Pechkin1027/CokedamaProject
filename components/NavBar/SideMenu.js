@@ -12,14 +12,8 @@ export default function SideMenu(props) {
         <TitleRow>Categories</TitleRow>
         <MenuItem name="Snake Plants" href="/category?type=SnakePlants" />
         <MenuItem name="Money Plants" href="/category?type=MoneyPlants" />
-        <MenuItem
-          name="Chinese Evergreen Varieties"
-          href="/category?type=ChineseEvergreenVarieties"
-        />
-        <MenuItem
-          name="Dumb Cane Varieties"
-          href="/category?type=DumbCaneVarieties"
-        />
+        <MenuItem name="Other Kokedama Plants" href="/category?type=OtherKokedamaPlants" />
+        <MenuItem name="All Items" href="/category?type=AllItems" />
         <MenuItem name="Etc" href="/category?type=Etc" />
       </MenuContainer>
       <Overlay open={props.isOpen} onClick={() => props.onClose()} />

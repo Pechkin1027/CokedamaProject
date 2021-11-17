@@ -10,9 +10,11 @@ export default function JumboSaleDisplay({ First, img, url, title, text }) {
         <Div First={First}>
           <RedTitle>{title}</RedTitle>
           <Text>{text}</Text>
-          <ButtonDiv>
+          {!First && 
+            <ButtonDiv>
             <Button>Shop Now</Button>
           </ButtonDiv>
+          }        
         </Div>
       </Wrapper>
     </Link>
@@ -45,19 +47,20 @@ const Div = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  display: flex;
+  width: 80%;
   position: absolute;
-  top: 0px;
+  top: 150px;
 `;
 
 const RedTitle = styled.h1`
   font-family: Helvetica;
   font-weight: 800;
-  font-size: 14px;
-  color: #1f1d1d;
-  width: 100%;
-  text-align: left;
+  font-size: 25px;
+  color: white;
+  width: 80%;
+  text-align: center;
   padding-bottom: 5px;
-  padding-top: 5px;
   @media ${(props) => props.theme.tablet} {
     font-size: 20px;
     padding-top: 10px;
@@ -69,9 +72,9 @@ const Text = styled.h1`
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 0.5px;
-  color: #252525;
+  color: white;
   width: 100%;
-  text-align: left;
+  text-align: center;
   padding-bottom: 5px;
   @media ${(props) => props.theme.tablet} {
     font-size: 30px;
@@ -82,6 +85,9 @@ const Text = styled.h1`
 const ButtonDiv = styled.div`
   width: 100%;
   text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Button = styled.button`

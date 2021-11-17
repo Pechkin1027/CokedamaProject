@@ -15,8 +15,8 @@ export default function FilterSection({
   let categories = [
     "Snake Plants",
     "Money Plants",
-    "Chinese Evergreen Varieties",
-    "Dumb Cane Varieties",
+    "Other Kokedama Plants",
+    "All Items",
     "Etc",
   ];
 

@@ -22,12 +22,10 @@ const CategoryCard = ({ data }) => {
 export default CategoryCard;
 
 const Wrapper = styled.a`
-  display: flex;
   justify-content: center;
-  flex-direction: column;
-  background: ${(props) => props.theme.lightGrey};
+  background: ${(props) => props.theme.LightGrey};
   max-width: 100%;
-  padding: 20px;
+  padding: 10px;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
@@ -35,7 +33,7 @@ const Wrapper = styled.a`
 const Img = styled.img`
   width: 100%;
   object-fit: contain;
-  height: 100px;
+  height: 300px;
 `;
 const H2 = styled.h2`
   font-size: 16px;
