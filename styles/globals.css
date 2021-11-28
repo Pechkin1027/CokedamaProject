@@ -928,3 +928,58 @@ textarea {
   font-size: larger;
   padding-bottom: 20px;
 }
+
+.aboutBanner{
+  /* background-color: lightblue; */
+  margin-top: 150px;
+  text-align: center;
+}
+
+.bannerHeader{
+  margin-bottom: 25px;
+}
+
+.bannerText{
+  float: right;
+  width: 50%;
+  padding-top: 120px;
+}
+
+.aboutBanner h2{
+  /* background-color: lightgreen; */
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 10px;
+}
+
+.aboutBanner p{
+  padding: 20px;
+  font-size: large;
+  width: 80%;
+  margin-left: 8%;
+}
+
+.aboutStory{
+  /* background-color: rgb(210, 218, 190); */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+
+}
+
+.aboutStory h2{
+  /* background-color: lightgreen; */
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 10px
+}
+
+.storyContent{
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.aboutStory p{
+  padding: 10px;
+  font-size: large;
+}
