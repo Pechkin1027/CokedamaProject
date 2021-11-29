@@ -8,10 +8,7 @@ const PageLayout = (props) => {
   return (
     <Wrapper>
       <Head>
-        <title>
-          Shopflow: Online Shopping - Bedding, Furniture, Decor, Home
-          Improvement & more
-        </title>
+        <title>Cokedama Interior Plantscaping</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
