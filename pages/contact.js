@@ -22,7 +22,7 @@ export default function contact() {
               >
                 <div className="facebook">
                   <img src="Facebook.png" width="25" height="25" />
-                  <H1>https://www.facebook.com/cokedamainteriorplantscaping</H1>
+                  <h3>https://www.facebook.com/cokedamainteriorplantscaping</h3>
                 </div>
               </a>
               <h3>+94 71 412 0033</h3>
