@@ -31,7 +31,7 @@ export default function contact() {
         </div>
         <div class="body">
             <div id="contact-form">
-            <form id="contact" class="form-class" method="post" action="contact-form-process.php"> 
+            <form id="contact" class="form-class" method="post" action="components/contact-form-process.php"> 
                 <div class="form-group">
                     <label for="Name" class="label">Your name</label>
                     <div class="input-group">

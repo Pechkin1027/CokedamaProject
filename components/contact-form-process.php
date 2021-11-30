@@ -70,6 +70,7 @@ if (isset($_POST['Email'])) {
     <!-- include your success message below -->
 
     Thank you for contacting us. We will be in touch with you very soon.
+    <meta http-equiv="Refresh" content="0; url='https://cokedama.lk'" />
 
 <?php
 }
