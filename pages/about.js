@@ -9,10 +9,13 @@ import { AllProducts } from "../data/Category";
 export default function about() {
   return (
     <PageLayout type={"ABOUT"}>
-      <div className="aboutBanner">
-        <div className="bannerHeader">
-          <h2>About Cokedama</h2>
+      <div className = "pageHeader">
+        <img src = "About_Background.jpg" width = "100%" height = "800px"/>
+        <div className="headerText">
+          <h2>About Cokedama Plantscaping</h2>
         </div>
+      </div>
+      <div className="aboutBanner">
         <div className="bannerContent">
           <img src="Floaters.jpg" width="50%" />
           <div className="bannerText">
@@ -105,6 +108,9 @@ export default function about() {
             sometimes, what seems to be bitter trials in life, turns into
             blessings in disguise. I hope my story inspires you too.
           </p>
+        </div>
+        <div className = "storyImg">
+          <img src="About_Kokedama_Plant.jpg" width = "100%"/>
         </div>
       </div>
     </PageLayout>
