@@ -59,27 +59,42 @@ export default function Navbar() {
     <Wrapper>
       {/* <NavsWrapper> */}
       <Container>
-        <SideMenu isOpen={openMenu} onClose={() => closeMenu()} />
-        <MenuIcon onClick={() => setOpenMenu(true)}>
-          <FiMenu />
-        </MenuIcon>
-        <Link href="/" passHref>
-          <LogoTag>
-            <SmallLogo src={"/ShopflowSmall.svg"} />
-            <Logo src={"/ShopflowLogo.svg"} />
-          </LogoTag>
-        </Link>
-        {/* <SearchBar /> */}
-        <Options>
-          {/* <NavOption type="Try" isTablet={isTablet} /> */}
-          <NavOption type="bell" isTablet={isTablet} isMobile={isMobile} />
-          <NavOption
-            type="cart"
-            isTablet={isTablet}
-            isMobile={isMobile}
-            url={"/checkout"}
-          />
-        </Options>
+        <Left>
+          <SideMenu isOpen={openMenu} onClose={() => closeMenu()} />
+          <MenuIcon onClick={() => setOpenMenu(true)}>
+            <FiMenu />
+          </MenuIcon>
+          <Link href="/" passHref>
+            <LogoTag>
+              <SmallLogo src={"/ShopflowSmall.svg"} />
+              <Logo src={"/ShopflowLogo.svg"} />
+            </LogoTag>
+          </Link>
+          <SideLinks>
+            <Link href="/about" passHref>
+              <LogoTag>About Us</LogoTag>
+            </Link>
+            <Link href="/category" passHref>
+              <LogoTag>Categories</LogoTag>
+            </Link>
+            <Link href="/contact" passHref>
+              <LogoTag>Contact Us</LogoTag>
+            </Link>
+          </SideLinks>
+          {/* <SearchBar /> */}
+        </Left>
+        <Right>
+          <Options>
+            {/* <NavOption type="Try" isTablet={isTablet} /> */}
+            <NavOption type="bell" isTablet={isTablet} isMobile={isMobile} />
+            <NavOption
+              type="cart"
+              isTablet={isTablet}
+              isMobile={isMobile}
+              url={"/checkout"}
+            />
+          </Options>
+        </Right>
       </Container>
       {/* <NavCategories /> */}
       {/* </NavsWrapper> */}
@@ -96,9 +111,9 @@ const Wrapper = styled.div`
   font-family: "Helvetica", "Arial", sans-serif;
   background-color: white;
   /* background: green; */
-  max-width: 1680px;
   z-index: 10;
   /* margin: 0 auto; */
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
   @media ${(props) => props.theme.tabletL} {
     height: unset;
   }
@@ -116,6 +131,7 @@ const NavsWrapper = styled.div`
 
 const Container = styled.div`
   width: 100%;
+  max-width: 1680px;
   margin-left: 13px;
   margin-right: 13px;
   margin: 24px auto;
@@ -128,9 +144,34 @@ const Container = styled.div`
     margin-left: 20px;
   }
 `;
-
+const Left = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Right = styled.div`
+  display: flex;
+`;
+const SideLinks = styled.div`
+  display: flex;
+  margin-top: 5px;
+  a {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    margin-right: 16px;
+  }
+`;
 const LogoTag = styled.a`
-  margin-right: 16px;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.55);
+  text-decoration: none;
+  &:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+    color: #708238;
+  }
 `;
 
 const Logo = styled.img`

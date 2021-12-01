@@ -19,7 +19,7 @@ const Footer = () => {
             <InnerDiv1>
               <a
                 href="https://www.facebook.com/cokedamainteriorplantscaping"
-                class="fbLink"
+                className="fbLink"
               >
                 <div className="facebook">
                   <img src="Facebook.png" width="25" height="25" />
