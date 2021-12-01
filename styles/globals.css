@@ -941,14 +941,14 @@ textarea {
 
 .headerText{
   position: relative;
-  top: -375px;
+  top: -300px;
   color: rgb(209, 208, 208);
   font-weight: bold;
-  font-size: 300% ;
 }
 
 .headerText h2{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 400%;
 }
 
 .bannerText{
@@ -966,7 +966,9 @@ textarea {
 
 .aboutBanner p{
   padding: 20px;
-  font-size: large;
+  font-size: 15px;
+  line-height: 28px;
+  color: #707070;
   width: 80%;
   margin-left: 8%;
 }
@@ -975,7 +977,7 @@ textarea {
   /* background-color: rgb(210, 218, 190); */
   margin-top: 50px;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -983,7 +985,9 @@ textarea {
   /* background-color: lightgreen; */
   font-weight: bold;
   font-size: xx-large;
-  padding: 10px
+  padding: 10px;
+  margin-left: 20px;
+  color: #5f5f5f;
 }
 
 .storyContent{
@@ -996,7 +1000,9 @@ textarea {
 
 .aboutStory p{
   padding: 10px;
-  font-size: large;
+  font-size: 15px;
+  line-height: 28px;
+  color: #707070;
 }
 
 .storyImg{
