@@ -10,7 +10,9 @@ export default function about() {
   return (
     <PageLayout type={"ABOUT"}>
       <div className = "pageHeader">
-        <img src = "About_Background.jpg" width = "100%" height = "600px"/>
+        <div className = "headerImg">
+          <img src = "About_Background2.jpg" width = "100%"/>
+        </div>
         <div className="headerText">
           <h2>About Cokedama Plantscaping</h2>
         </div>

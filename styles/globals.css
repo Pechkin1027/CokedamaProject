@@ -941,7 +941,7 @@ textarea {
 
 .headerText{
   position: relative;
-  top: -300px;
+  top: -250px;
   color: rgb(209, 208, 208);
 }
 
@@ -1008,4 +1008,10 @@ textarea {
   float: right;
   width: 45%;
   margin-top: 100px;
+}
+
+.headerImg{
+  overflow: hidden;
+  margin-top: 100px;
+  max-height: 400px;
 }
