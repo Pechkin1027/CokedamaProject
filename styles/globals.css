@@ -90,7 +90,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -946,8 +946,12 @@ textarea {
 }
 
 .headerText h2{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 400%;
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 60px;
+  letter-spacing: 10px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .bannerText{
@@ -1008,10 +1012,17 @@ textarea {
   float: right;
   width: 45%;
   margin-top: 100px;
+  border-radius: 40px;
+  overflow: hidden;
 }
 
 .headerImg{
   overflow: hidden;
   margin-top: 100px;
   max-height: 400px;
+}
+
+.bannerContent img{
+  border-radius: 40px;
+  overflow: hidden;
 }

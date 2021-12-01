@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "styled-components";
 
+
 const theme = {
   BoldText: "#2f3337",
   redText: "#c7202c",

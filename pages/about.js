@@ -14,7 +14,7 @@ export default function about() {
           <img src = "About_Background2.jpg" width = "100%"/>
         </div>
         <div className="headerText">
-          <h2>About Cokedama Plantscaping</h2>
+          <h2>ABOUT COKEDAMA PLANTSCAPING</h2>
         </div>
       </div>
       <div className="aboutBanner">
