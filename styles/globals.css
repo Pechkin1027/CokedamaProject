@@ -1167,7 +1167,7 @@ textarea {
   transition: all 0.4s;
   background: rgb(100, 122, 61);
   color: whitesmoke;
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 3px 3px 0 rgba(53, 53, 53, 0.8);
 }
 
 .contactSet input[type = "submit"]:hover {
@@ -1189,8 +1189,8 @@ textarea {
   padding: 10px 0 10px 20px;
   font-size: 24px;
   border-radius: 50px;
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(61, 61, 61, 0.8);
+  box-shadow: 3px 3px 0 rgba(61, 61, 61, 0.8);
   background: rgba(100, 122, 61, 0.3);
 }
 
