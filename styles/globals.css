@@ -90,7 +90,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -891,22 +891,22 @@ textarea {
   width: 50%;
 }
 
-.facebook{
+.facebook {
   display: grid;
   grid-template-columns: 10% 90%;
 }
 
-.facebook H1{
+.facebook h1 {
   padding-top: 3px;
   text-decoration: none;
   color: white;
 }
 
-.fbLink{
+.fbLink {
   text-decoration: none;
 }
 
-.goal{
+.goal {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -915,7 +915,7 @@ textarea {
   background-image: url("https://i.ibb.co/mtJ73vD/shutterstock-1848217774.jpg");
 }
 
-.goalText{
+.goalText {
   float: right;
   padding-right: 285px;
   overflow: hidden;
@@ -923,29 +923,29 @@ textarea {
   font-size: large;
 }
 
-.goalText h2{
+.goalText h2 {
   font-weight: bold;
   font-size: larger;
   padding-bottom: 20px;
 }
 
-.aboutBanner{
+.aboutBanner {
   /* background-color: lightblue; */
   margin-top: 10px;
   text-align: center;
 }
 
-.pageHeader{
+.pageHeader {
   text-align: center;
 }
 
-.headerText{
+.headerText {
   position: relative;
   top: -250px;
   color: rgb(230, 230, 230);
 }
 
-.headerText h2{
+.headerText h2 {
   font-weight: 100;
   font-size: 45px;
   line-height: 60px;
@@ -954,20 +954,20 @@ textarea {
   text-transform: uppercase;
 }
 
-.bannerText{
+.bannerText {
   float: right;
   width: 50%;
   padding-top: 120px;
 }
 
-.aboutBanner h2{
+.aboutBanner h2 {
   /* background-color: lightgreen; */
   font-weight: bold;
   font-size: xx-large;
   padding: 10px;
 }
 
-.aboutBanner p{
+.aboutBanner p {
   padding: 20px;
   font-size: 15px;
   line-height: 28px;
@@ -976,15 +976,14 @@ textarea {
   margin-left: 8%;
 }
 
-.aboutStory{
+.aboutStory {
   /* background-color: rgb(210, 218, 190); */
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: left;
-
 }
 
-.aboutStory h2{
+.aboutStory h2 {
   /* background-color: lightgreen; */
   font-weight: bold;
   font-size: xx-large;
@@ -993,7 +992,7 @@ textarea {
   color: #5f5f5f;
 }
 
-.storyContent{
+.storyContent {
   padding: 20px;
   padding-top: 30px;
   float: left;
@@ -1001,14 +1000,14 @@ textarea {
   /* background-color: lightblue; */
 }
 
-.aboutStory p{
+.aboutStory p {
   padding: 10px;
   font-size: 15px;
   line-height: 28px;
   color: #707070;
 }
 
-.storyImg{
+.storyImg {
   float: right;
   width: 45%;
   margin-top: 100px;
@@ -1016,13 +1015,31 @@ textarea {
   overflow: hidden;
 }
 
-.headerImg{
+.headerImg {
   overflow: hidden;
   margin-top: 100px;
   max-height: 400px;
 }
 
-.bannerContent img{
+.bannerContent img {
   border-radius: 40px;
   overflow: hidden;
+}
+
+.contactBanner img {
+  image-resolution: 500px;
+  width: 1600px;
+  background-repeat: repeat-x;
+  height: 300px;
+}
+
+.form-group-1_ {
+  left: 400px;
+}
+
+.form-group-2 {
+  left: 500px;
+}
+
+.contact-block {
 }
