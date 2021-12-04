@@ -124,21 +124,44 @@ export default function home() {
         </div>
       </div>
       <MainCont>
-        <JumboSaleDisplay
+        <div className = "bannerOne">
+          <div className = "oneText">
+            <h2>Kokedama</h2>
+            <p>A free-form variant of traditional bonsai that is easy to try at home</p>
+          </div>
+          <form action = "http://localhost:3000/category?type=MoneyPlants">
+              <input type = "submit" value = "Shop Now"/>
+          </form>
+          <img src = "https://i.ibb.co/vwXndX8/shutterstock-1825228952.jpg" />
+        </div>
+        {/* <JumboSaleDisplay
           img="https://i.ibb.co/vwXndX8/shutterstock-1825228952.jpg"
           url="/category?type=MoneyPlants"
           title="Kokedama"
           text="A free-form variant of traditional bonsai that is easy to try at home"
-        />
+        /> */}
         <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
-        <JumboSaleDisplay
+        <div className = "bannerTwo">
+          <div className = "twoText">
+            <h2>Our Goal</h2>
+            <p>To promote eco-friendly interior designing and
+          inspire people to pursue careers working with plants while finding
+          meaningful creative work to financially support them and their
+          families.</p>
+          </div>
+          <form action = "http://localhost:3000/category?type=MoneyPlants">
+              <input type = "submit" value = "Shop Now"/>
+          </form>
+          <img src = "https://i.ibb.co/6N0r0ws/shutterstock-1711748359.jpg" />
+        </div>
+        {/* <JumboSaleDisplay
           img="https://i.ibb.co/6N0r0ws/shutterstock-1711748359.jpg"
           url="/category?type=SnakePlants"
           title="Our Goal"
           text="To promote eco-friendly interior designing and
           inspire people to pursue careers working with plants while finding
           meaningful creative work to financially support them and their
-          families."
+          families." */}
         />
       </MainCont>
     </PageLayout>

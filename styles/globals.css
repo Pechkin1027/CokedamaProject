@@ -888,7 +888,7 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 25%;
 }
 
 .facebook{
@@ -1025,4 +1025,83 @@ textarea {
 .bannerContent img{
   border-radius: 40px;
   overflow: hidden;
+}
+
+.bannerOne {
+  margin-bottom: 40px;
+}
+
+.bannerOne img{
+  float: right;
+  width: 50%;
+}
+
+.bannerOne form{
+  position: relative;
+  top: 195px;
+  left: 20%;  
+}
+
+.bannerOne input{
+  background-color: darkolivegreen;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 10%;
+  height: 50px;
+  font-size: x-large;
+}
+
+.oneText {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.oneText h2{
+  font-weight: bold;
+  font-size: xx-large;
+  padding-bottom: 15px;
+}
+
+.bannerTwo {
+  margin-bottom: 40px;
+}
+
+.bannerTwo img{
+  float: left;
+  width: 50%;
+}
+
+.bannerTwo form{
+  position: relative;
+  top: 195px;
+  left: 20%;  
+}
+
+.bannerTwo input{
+  background-color: darkolivegreen;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 10%;
+  height: 50px;
+  font-size: x-large;
+}
+
+.twoText {
+  float: right;
+  width: 45%;
+  right: 3%;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.twoText h2{
+  font-weight: bold;
+  font-size: xx-large;
+  padding-bottom: 15px;
 }
