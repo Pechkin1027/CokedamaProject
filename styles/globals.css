@@ -1104,3 +1104,30 @@ textarea {
   font-size: xx-large;
   padding-bottom: 15px;
 }
+
+.contactBanner{
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.contactImg{
+  overflow: hidden;
+  max-height: 400px;
+}
+
+.contactHeader{
+  position: relative;
+  bottom: 230px;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 60px;
+  letter-spacing: 10px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.inputGroup{
+  padding: 10px;
+}
