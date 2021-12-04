@@ -11,41 +11,52 @@ import { BiRepeat } from "react-icons/bi";
 export default function contact() {
   return (
     <PageLayout type={"CONTACT"}>
-      <div className="contactBanner">
-        <div className="contactImg">
-          <img src="https://i.ibb.co/1bQSDG2/kokedama-header-1024x683.jpg" width="100%"/>
-        </div>
-        <div className="contactHeader">
-          <h2>Contact Us</h2>
-        </div>
-      </div>
-        {/* Form group 1 */}
-        <div class="col-md-6 col-sm-12">
-          <div class="contact-block">
-            <div class="form-group-1">
-              <div class="input-group">
-                <label for="Name" class="label"> Your name </label>
-                <input type="text" id="name" class="control-form-control" required></input>
-              </div>
-              <div class="inputGroup">
-                <label for="Email" class="label"> Your Email Address </label>
-                <input type="text" id="email" class="control-form-control" required></input>
-              </div>
-              <div class="inputGroup">
-                <label for="Subject" class="label"> Subject </label>
-                <input type="text" id="email" class="control-form-control"></input>
-              </div>
-            </div>
+      <html>
+        <div className = "contactBanner">
+          <div className = "contactImg">
+            <img src = "Contact_Background.jpg" width = "100%"/>
+          </div>
+          <div className = "contactTitle">
+            <h2>Contact Us</h2>
           </div>
         </div>
-        <div class="col-md-12 col-sm-12">
-          <div class="form-group-2">
-            <label for="Message" class="label"> Message </label>
-            <div class="inpuGroup">
-              <textarea name="user message" class="for control" rows="5" columns="4" maxlength="3000" placeholder="Your message"></textarea>
+        <div className = "contactContent">
+          <div className = "contactContainer">
+            <div className = "contactSet">
+              <div className = "setContent">
+                <label>First Name</label>
+                <input type = "text"/>
+              </div>
             </div>
-          </div>
+            <div className = "contactSet">
+              <div className = "setContent">
+                <label>Last Name</label>
+                <input type = "text"/>
+              </div>
+            </div>
+            <div className = "contactSet">
+              <div className = "setContent">
+                <label>Email Address</label>
+                <input type = "email"/>
+              </div>
+            </div>
+            <div className = "contactSet">
+              <div className = "setContent">
+                <label>Phone Number</label>
+                <input type = "text"/>
+              </div>
+            </div><div className = "contactSet">
+              <div className = "setContent">
+                <label>Message</label>
+                <textarea></textarea>
+              </div>
+            </div>
+            <div className = "contactSet">
+              <input type = "submit" value = "Submit"/>
+            </div>
+          </div> 
         </div>
+      </html>
     </PageLayout>
   );
 }
