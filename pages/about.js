@@ -41,6 +41,7 @@ export default function about() {
         </div>
       </div>
       <div className="aboutStory">
+        <img src="About_Kokedama_Plant.jpg" width="45%" />
         <div className="storyHeader">
           <h2>Our Story</h2>
         </div>
@@ -115,9 +116,6 @@ export default function about() {
             bitter trials in life, turns into blessings in disguise. I
             hope my story inspires you too.
           </p>
-          <div className="storyImg">
-            <img src="About_Kokedama_Plant.jpg" width="100%" />
-          </div>
         </div>
       </div>
     </PageLayout>

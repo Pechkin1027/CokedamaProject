@@ -858,9 +858,9 @@ textarea {
 }
 
 .vision-section h2 {
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -879,7 +879,7 @@ textarea {
 }
 
 .vision-box h2 {
-  font-weight: bold;
+  /* font-weight: bold; */
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1007,14 +1007,6 @@ textarea {
   color: #707070;
 }
 
-.storyImg {
-  float: right;
-  width: 45%;
-  margin-top: 100px;
-  border-radius: 40px;
-  overflow: hidden;
-}
-
 .headerImg {
   overflow: hidden;
   margin-top: 100px;
@@ -1024,6 +1016,14 @@ textarea {
 .bannerContent img {
   border-radius: 40px;
   overflow: hidden;
+}
+
+.aboutStory img{
+  float: right;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  top: 160px;
 }
 
 .bannerOne {
