@@ -161,8 +161,8 @@ export default function home() {
           text="To promote eco-friendly interior designing and
           inspire people to pursue careers working with plants while finding
           meaningful creative work to financially support them and their
-          families." */}
-        />
+          families."
+        /> */}
       </MainCont>
     </PageLayout>
   );
