@@ -16,39 +16,39 @@ export default function home() {
   ];
   let category1 = [
     {
-      name: "Snake Plants",
-      description: "Sansevieria Zeylancia",
+      name: "Kokedama Plants",
+      //description: "Sansevieria Zeylancia",
       img: "https://www.succulentsurprise.com.au/images/products/large/ksg6xpx66i.jpg",
-      urlQuery: "SnakePlants",
+      urlQuery: "KokedamaPlants",
     },
     {
-      name: "Money Plants",
-      description: "Goldon Pothos",
+      name: "Kokedama String Gardens",
+      //description: "Goldon Pothos",
       img: "https://i.ibb.co/sj3fv49/planter-montsera-1600x.png",
-      urlQuery: "MoneyPlants",
+      urlQuery: "KokedamaStringGardens",
     },
     {
-      name: "Other Kokedama Plants",
+      name: "Decayed Wood Plant Arrangements",
       description: "Aglaonema, Diffenbachia*, etc.",
       img: "https://i.ibb.co/YZNbm3j/images.jpg",
-      urlQuery: "OtherKokedamaPlants",
+      urlQuery: "DecayedWoodPlantArrangements",
     },
     {
       name: "All Items",
-      description: "All of our items",
+      //description: "All of our items",
       img: "https://i.ibb.co/SrDSvsd/Plants-01.jpg",
       urlQuery: "AllItems",
     },
     {
-      name: "Etc.",
-      description: "Potted Plants, Greeting Cards, and more",
+      name: "Terrariums",
+      //description: "Potted Plants, Greeting Cards, and more",
       img: "https://i.ibb.co/Snp3xFk/face-full-of-flowers-thank-you-card-boxed-set-red-cap-greeting-cards-boston-general-store-2806200814.jpg",
-      urlQuery: "Etc",
+      urlQuery: "Terrariums",
     },
     {
-      name: "GROW a little love with little PLANTS",
+      name: "Decorative Planters",
       img: "https://i.ibb.co/S6b2HbK/Kokedama-japanese-moss-ball-plant-in-female-hands-Gardening-at-home-Vector-illustration.jpg",
-      urlQuery: "AllItems",
+      urlQuery: "DecorativePlanters",
     },
   ];
   let grid1 = [AllProducts[2], AllProducts[1], AllProducts[6]];

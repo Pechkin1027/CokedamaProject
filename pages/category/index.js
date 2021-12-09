@@ -6,14 +6,20 @@ import MainSection from "../../components/Collection/MainSection";
 
 export default function Collection() {
   const [sort, setSort] = useState("");
-  const [group, setGroup] = useState("Snake Plants");
+  const [group, setGroup] = useState("All Items");
 
   const urlq = {
-    SnakePlants: "Snake Plants",
-    MoneyPlants: "Money Plants",
-    OtherKokedamaPlants: "Other Kokedama Plants",
+    KokedamaPlants: "Kokedama Plants",
+    KokedamaStringGardens: "Kokedama String Gardens",
+    DecayedWoodPlantArrangements: "Decayed Wood Plant Arrangements",
+    Terrariums: "Terrariums",
+    PlantArt: "Plant Art",
+    DecorativePots: "Decorative Pots",
+    DecorativePlanters: "Decorative Planters",
+    PlantThemedPhotoFrames: "Plant Themed Photo Frames",
+    PlantThemedGreetingCards: "Plant Themed Greeting Cards",
+    PlantThemedHomeDecor: "Plant Themed Home Decor",
     AllItems: "All Items",
-    Etc: "Etc",
   };
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
