@@ -34,10 +34,9 @@ export default function home() {
       urlQuery: "DecayedWoodPlantArrangements",
     },
     {
-      name: "All Items",
-      //description: "All of our items",
-      img: "https://i.ibb.co/SrDSvsd/Plants-01.jpg",
-      urlQuery: "AllItems",
+      name: "Decorative Planters",
+      img: "https://i.ibb.co/C9STdsW/Cloth-Planters.jpg",
+      urlQuery: "DecorativePlanters",
     },
     {
       name: "Terrariums",
@@ -46,9 +45,10 @@ export default function home() {
       urlQuery: "Terrariums",
     },
     {
-      name: "Decorative Planters",
-      img: "https://i.ibb.co/C9STdsW/Cloth-Planters.jpg",
-      urlQuery: "DecorativePlanters",
+      name: "All Items",
+      //description: "All of our items",
+      img: "https://i.ibb.co/SrDSvsd/Plants-01.jpg",
+      urlQuery: "AllItems",
     },
   ];
   let grid1 = [AllProducts[2], AllProducts[1], AllProducts[6]];
