@@ -8,7 +8,7 @@ export default function Overview() {
         <Title>Returns</Title>
         <InfoContainer>
           <Column>
-            <Policy>
+            {/* <Policy>
               <Image src="https://i.ibb.co/MSLcCYK/75c1915a3fb3ad15c654f51be00fbf56.png" />
               <Info>
                 <Policy__Title>30 Days to Initiate a Return</Policy__Title>
@@ -60,7 +60,7 @@ export default function Overview() {
                   opened or used products.
                 </Details>
               </Info>
-            </Policy>
+            </Policy> */}
             <Policy>
               <Image src="https://i.ibb.co/c6TTJVg/1f95892e0b12fe1b4c1756cf80799cc2.png" />
               <Info>
