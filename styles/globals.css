@@ -851,9 +851,8 @@ textarea {
   }
 }
 .vision-section {
-  display: grid;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   text-align: center;
 }
 
@@ -864,18 +863,23 @@ textarea {
   margin-bottom: 20px;
 }
 
-.vision-row1,
-.vision-row2 {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  /* background-color: aquamarine; */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 .vision-box {
-  /* background-color: lightcoral; */
-  height: 400px;
   text-align: center;
-  margin: 20px;
+  width: calc(25% - 20px);
+  padding: 10px;
+}
+
+@media (max-width: 800) {
+  .vision-box {
+    width: auto;
+    flex-direction: column;
+  }
 }
 
 .vision-box h2 {
@@ -1026,19 +1030,46 @@ textarea {
   top: 160px;
 }
 
-.bannerOne {
+.bannerOne, .bannerTwo {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
 
-.bannerOne img{
-  float: right;
-  width: 50%;
+.oneText, .twoText {
+  text-align: center;
+  padding: 10px 20px;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .oneText, .twoText {
+    padding: 20px 20px;
+  }
+}
+
+.oneText h2, .twoText h2{
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .bannerOne form{
-  position: relative;
-  top: 195px;
-  left: 20%;  
+  background-image: url("https://i.ibb.co/vwXndX8/shutterstock-1825228952.jpg");
+  padding: 100px 10px;
+  flex: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .bannerOne{
+    flex-direction: column;
+  }
 }
 
 .bannerOne input{
@@ -1047,37 +1078,27 @@ textarea {
   padding: 10px;
   border-radius: 10px;
   border: none;
-  width: 10%;
+  width: fit-content;
   height: 50px;
   font-size: x-large;
 }
 
-.oneText {
-  float: left;
-  width: 50%;
+.twoText {
+  flex: 50%;
   text-align: center;
-  padding-top: 150px;
-}
-
-.oneText h2{
-  font-weight: bold;
-  font-size: xx-large;
-  padding-bottom: 15px;
-}
-
-.bannerTwo {
-  margin-bottom: 40px;
-}
-
-.bannerTwo img{
-  float: left;
-  width: 50%;
 }
 
 .bannerTwo form{
-  position: relative;
-  top: 195px;
-  left: 20%;  
+  background-image: url("https://i.ibb.co/6N0r0ws/shutterstock-1711748359.jpg");
+  padding: 100px 10px;
+  flex: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .bannerTwo{
+    flex-direction: column;
+  }
 }
 
 .bannerTwo input{
@@ -1086,23 +1107,9 @@ textarea {
   padding: 10px;
   border-radius: 10px;
   border: none;
-  width: 10%;
+  width: fit-content;
   height: 50px;
   font-size: x-large;
-}
-
-.twoText {
-  float: right;
-  width: 45%;
-  right: 3%;
-  text-align: center;
-  padding-top: 150px;
-}
-
-.twoText h2{
-  font-weight: bold;
-  font-size: xx-large;
-  padding-bottom: 15px;
 }
 
 .contactBanner{
@@ -1163,15 +1170,16 @@ textarea {
   text-transform: uppercase;
   line-height: 40px;
   font-size: 24px;
-  border-radius: 45px;
-  transition: all 0.4s;
+  border-radius: 25px;
+  transition: all 0.2s;
   background: rgb(100, 122, 61);
   color: whitesmoke;
-  box-shadow: 3px 3px 0 rgba(53, 53, 53, 0.8);
+  border: 2px solid rgba(61, 61, 61, 0.8);
+  /* box-shadow: 3px 3px 0 rgba(53, 53, 53, 0.8); */
 }
 
 .contactSet input[type = "submit"]:hover {
-  border: 3px solid rgba(0, 0, 0, 1);
+  border: 3px solid rgba(61, 61, 61, 0.8);
   transition: all 0.4s;
 }
 
@@ -1187,16 +1195,16 @@ textarea {
   width: 90%;
   height: 100%;
   padding: 10px 0 10px 20px;
-  font-size: 24px;
-  border-radius: 50px;
+  font-size: 15px;
+  border-radius: 20px;
   border: 2px solid rgba(61, 61, 61, 0.8);
-  box-shadow: 3px 3px 0 rgba(61, 61, 61, 0.8);
-  background: rgba(100, 122, 61, 0.3);
+  /* box-shadow: 3px 3px 0 rgba(61, 61, 61, 0.8); */
+  /* background: rgba(100, 122, 61, 0.3); */
 }
 
 .setContent input:focus,
 .setContent textarea:focus {
-  border: 3px solid black;
+  border: 3px solid rgba(61, 61, 61, 0.8);
   transition: all 0.5s;
 }
 
