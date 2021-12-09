@@ -41,17 +41,6 @@ export default function Overview() {
           </Column>
           <Column>
             <Policy>
-              <Image src="https://i.ibb.co/pW0pG0n/270af23b5f9913a35013f1d5f380e789.png" />
-              <Info>
-                <Policy__Title>Errors and Defects</Policy__Title>
-                <Details>
-                  If the return is a result of our error or defective product,
-                  we will refund the full cost of the merchandise and shipping
-                  charges.
-                </Details>
-              </Info>
-            </Policy>
-            <Policy>
               <Image src="https://i.ibb.co/tscmPCs/cfad5281d0b75c459b5e092524071842.png" />
               <Info>
                 <Policy__Title>Partial Refunds</Policy__Title>
@@ -68,7 +57,20 @@ export default function Overview() {
                 <Details>
                   In accordance with federal and state guidelines and for the
                   safety of our consumers, suppliers and carriers, some products
-                  are non-returnable and non-refundable.
+                  are non-returnable.
+                </Details>
+              </Info>
+            </Policy>
+          </Column>
+          <Column>
+            <Policy>
+              <Image src="https://i.ibb.co/pW0pG0n/270af23b5f9913a35013f1d5f380e789.png" />
+              <Info>
+                <Policy__Title>Errors and Defects</Policy__Title>
+                <Details>
+                  If the return is a result of our error or defective product,
+                  we will refund the full cost of the merchandise and shipping
+                  charges.
                 </Details>
               </Info>
             </Policy>
