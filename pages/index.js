@@ -133,7 +133,7 @@ export default function home() {
         </div>
         <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
         <div className = "bannerTwo">
-          <form action = "http://localhost:3000/category?type=MoneyPlants">
+          <form action = "/category?type=AllProducts">
               <input type = "submit" value = "Shop Now"/>
           </form>
           <div className = "twoText">
@@ -143,13 +143,6 @@ export default function home() {
           meaningful creative work to financially support them and their
           families.</p>
           </div>
-<<<<<<< HEAD
-          <form action = "/category?type=AllProducts">
-              <input type = "submit" value = "Shop Now"/>
-          </form>
-          <img src = "https://i.ibb.co/6N0r0ws/shutterstock-1711748359.jpg" />
-=======
->>>>>>> 280da4c9cee987a128a2d2a5a4de4b4b39f4f23f
         </div>
       </MainCont>
     </PageLayout>
