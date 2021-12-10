@@ -56,7 +56,7 @@ export default function Overview() {
                 <Policy__Title>Non-Returnable Items</Policy__Title>
                 <Details>
                   In accordance with federal and state guidelines and for the
-                  safety of our consumers, suppliers and carriers, some products
+                  safety of our consumers, suppliers, and carriers, some products
                   are non-returnable.
                 </Details>
               </Info>
@@ -68,7 +68,7 @@ export default function Overview() {
               <Info>
                 <Policy__Title>Errors and Defects</Policy__Title>
                 <Details>
-                  If the return is a result of our error or defective product,
+                  If the case of our error or of a defective product,
                   we will refund the full cost of the merchandise and shipping
                   charges.
                 </Details>
