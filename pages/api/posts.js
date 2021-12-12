@@ -1,6 +1,6 @@
 import { sql_query } from "../../lib/db";
 
-const handler = async(_, res) => {
+const handler = async (_, res) => {
     try {
         const results = await sql_query(`
             SELECT * FROM products
