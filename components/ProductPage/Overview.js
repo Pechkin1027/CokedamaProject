@@ -13,7 +13,7 @@ export default function Overview({ data }) {
               <MiniText>{data.description}</MiniText>
             </Description>
           </Column>
-          <Column>
+          {/* <Column>
             <Specifications__Title>Specifications</Specifications__Title>
             <Specifications>
               <Row>
@@ -49,7 +49,7 @@ export default function Overview({ data }) {
                 </Value>
               </Row>
             </Specifications>
-          </Column>
+          </Column> */}
         </InfoContainer>
       </Container>
     </Wrapper>
