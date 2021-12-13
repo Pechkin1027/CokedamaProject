@@ -27,7 +27,6 @@ export default function ProductFilters({
 
 const Wrapper = styled.div`
   width: 25%;
-  height: 500px;
   min-width: 170px;
   display: none;
   align-items: center;
