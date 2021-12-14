@@ -68,7 +68,6 @@ const Wrapper = styled.div`
   border-top: 1px solid #dadcdf;
   padding-top: 16px;
   margin-bottom: 16px;
-  max-height: 300px;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;

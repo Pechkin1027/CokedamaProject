@@ -16,7 +16,7 @@ const Footer = () => {
             </P>
           </Col1>
           <Col2>
-            <InnerDiv1>
+            {/* <InnerDiv1>
               <a
                 href="https://www.facebook.com/cokedamainteriorplantscaping"
                 className="fbLink"
@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
               </a>
               <H1>+94 71 412 0033</H1>
-            </InnerDiv1>
+            </InnerDiv1> */}
           </Col2>
         </UpperHalf>
       </Container>

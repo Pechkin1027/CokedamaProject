@@ -111,7 +111,7 @@ export default function CheckoutForm() {
       parseFloat(formik.values.address.length) > 1 &&
       parseFloat(formik.values.zip.length) > 4 &&
       parseFloat(formik.values.city.length) > 1
-      ) 
+    )
       return true;
     else {
       return false;

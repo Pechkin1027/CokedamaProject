@@ -862,30 +862,51 @@ textarea {
   font-size: 30px;
   margin-bottom: 20px;
 }
-
+.vision-section p {
+  width: 70%;
+  text-align: center;
+}
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  
+  justify-content: center;
 }
+/* mobileS: "(min-width: 322px)",
+mobileM: "(min-width: 377px)",
+mobileL: "(min-width: 427px)",
+mobileXL: "(min-width: 540px)",
+tablet: "(min-width: 770px)",
+tabletL: "(min-width: 960px)",
+laptop: "(min-width: 1026px)",
+laptopM: "(min-width: 1222px)",
+laptopL: "(min-width: 1442px)",
+laptopSL: "(min-width: 1922px)",
+desktop: "(min-width: 2562px)", */
 
 .vision-box {
   text-align: center;
-  width: calc(25% - 20px);
-  padding: 10px;
+  width: 100%;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
 }
-
-.vision-box h2 {
-  font-size: 20px;
-}
-
-@media (max-width: 800) {
+@media (min-width: 540px) {
   .vision-box {
-    width: auto;
-    flex-direction: column;
+    padding: 40px;
+    width: calc(50% - 80px);
   }
 }
-
+@media (min-width: 960px) {
+  .vision-box {
+    width: calc(33% - 20px);
+  }
+}
+@media (min-width: 1026px) {
+  .vision-box {
+    width: calc(25% - 20px);
+  }
+}
 .vision-box h2 {
   /* font-weight: bold; */
   padding-top: 10px;
@@ -896,7 +917,7 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 20%;
 }
 
 .facebook {
@@ -1026,7 +1047,7 @@ textarea {
   overflow: hidden;
 }
 
-.aboutStory img{
+.aboutStory img {
   float: right;
   border-radius: 40px;
   overflow: hidden;
@@ -1034,14 +1055,16 @@ textarea {
   top: 160px;
 }
 
-.bannerOne, .bannerTwo {
+.bannerOne,
+.bannerTwo {
   margin-bottom: 40px;
   display: flex;
   flex-direction: row;
   text-align: center;
 }
 
-.oneText, .twoText {
+.oneText,
+.twoText {
   text-align: center;
   padding: 10px 20px;
   flex: 50%;
@@ -1052,7 +1075,8 @@ textarea {
 }
 
 @media (max-width: 800px) {
-  .oneText, .twoText {
+  .oneText,
+  .twoText {
     padding: 20px 20px;
   }
 }
@@ -1063,7 +1087,7 @@ textarea {
   padding-bottom: 10px;
 }
 
-.bannerOne form{
+.bannerOne form {
   background-image: url("https://boulderhg.com/wp-content/uploads/2021/04/lighter-HouseplantParty-p75D-e1617649425355.jpg?width=1000&height=280&scale=both&crop=auto");
   padding: 100px 10px;
   flex: 50%;
@@ -1071,12 +1095,12 @@ textarea {
 }
 
 @media (max-width: 800px) {
-  .bannerOne{
+  .bannerOne {
     flex-direction: column;
   }
 }
 
-.bannerOne input{
+.bannerOne input {
   background-color: darkolivegreen;
   color: white;
   padding: 10px;
@@ -1092,7 +1116,7 @@ textarea {
   text-align: center;
 }
 
-.bannerTwo form{
+.bannerTwo form {
   background-image: url("https://www.costafarms.com/CostaFarms/Kokedama-Blog-Header.jpg?width=1000&height=280&scale=both&crop=auto");
   padding: 100px 10px;
   flex: 50%;
@@ -1100,12 +1124,12 @@ textarea {
 }
 
 @media (max-width: 800px) {
-  .bannerTwo{
+  .bannerTwo {
     flex-direction: column;
   }
 }
 
-.bannerTwo input{
+.bannerTwo input {
   background-color: darkolivegreen;
   color: white;
   padding: 10px;
@@ -1116,7 +1140,7 @@ textarea {
   font-size: x-large;
 }
 
-.contactBanner{
+.contactBanner {
   margin-top: 100px;
   text-align: center;
 }
@@ -1166,7 +1190,7 @@ textarea {
   margin-top: 32px;
 }
 
-.contactSet input[type = "submit"] {
+.contactSet input[type="submit"] {
   letter-spacing: 10px;
   padding: 10px;
   height: 100%;
@@ -1205,6 +1229,6 @@ textarea {
   font-family: "Roboto";
 }
 
-.setContent textarea::placeholder{
+.setContent textarea::placeholder {
   padding-top: 10px;
 }
