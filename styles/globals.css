@@ -1054,13 +1054,12 @@ textarea {
 }
 
 .oneText h2, .twoText h2{
-  font-weight: bold;
   font-size: 20px;
   padding-bottom: 10px;
 }
 
 .bannerOne form{
-  background-image: url("https://i.ibb.co/vwXndX8/shutterstock-1825228952.jpg");
+  background-image: url("https://boulderhg.com/wp-content/uploads/2021/04/lighter-HouseplantParty-p75D-e1617649425355.jpg?width=1000&height=280&scale=both&crop=auto");
   padding: 100px 10px;
   flex: 50%;
   display: inline-block;
@@ -1089,7 +1088,7 @@ textarea {
 }
 
 .bannerTwo form{
-  background-image: url("https://i.ibb.co/6N0r0ws/shutterstock-1711748359.jpg");
+  background-image: url("https://www.costafarms.com/CostaFarms/Kokedama-Blog-Header.jpg?width=1000&height=280&scale=both&crop=auto");
   padding: 100px 10px;
   flex: 50%;
   display: inline-block;
@@ -1106,7 +1105,7 @@ textarea {
   color: white;
   padding: 10px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid rgb(75, 75, 75);
   width: fit-content;
   height: 50px;
   font-size: x-large;

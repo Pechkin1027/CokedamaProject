@@ -223,7 +223,7 @@ const Red = styled.div`
 
 const Button = styled.button`
   width: 100%;
-  background-color: ${(props) => (props.Empty ? "#0272a2" : "#27865f")};
+  background-color: #808000;
   color: #fff;
   font-size: 18px;
   border-radius: 4px;
