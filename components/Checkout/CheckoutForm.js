@@ -85,17 +85,6 @@ export default function CheckoutForm() {
     else if (values.zip.length < 5) errors.zip = "Must be as least 5 digits";
     else if (isNaN(values.zip)) errors.zip = "Input must only contain numbers";
     if (!values.city) errors.city = "Required";
-    if (!values.state) errors.state = "Required";
-    else if (!StatesUS.has(values.state.toUpperCase()))
-      errors.state = "Enter a valid State";
-    if (!values.CC) errors.CC = "Required";
-    else if (values.CC.length != 16)
-      errors.CC = "Card number must be 16 digits long";
-    else if (isNaN(values.CC)) errors.CC = "Code must only container numbers";
-    if (!values.CVV) errors.CVV = "Required";
-    else if (values.CVV.length != 3)
-      errors.CVV = "Security Code must be 3 digits long";
-    else if (isNaN(values.CVV)) errors.CVV = "Code must only container numbers";
     return errors;
   };
   const initialValues = {
@@ -106,11 +95,6 @@ export default function CheckoutForm() {
     country: "",
     zip: "",
     city: "",
-    state: "",
-    CC: "",
-    CVV: "",
-    month: "",
-    year: "",
   };
   const formik = useFormik({
     initialValues,
@@ -126,11 +110,8 @@ export default function CheckoutForm() {
       parseFloat(formik.values.last_name.length) > 1 &&
       parseFloat(formik.values.address.length) > 1 &&
       parseFloat(formik.values.zip.length) > 4 &&
-      parseFloat(formik.values.city.length) > 1 &&
-      parseFloat(formik.values.state.length) > 1 &&
-      parseFloat(formik.values.CC.length) > 15 &&
-      parseFloat(formik.values.CVV.length) > 2
-    )
+      parseFloat(formik.values.city.length) > 1
+      ) 
       return true;
     else {
       return false;
@@ -162,7 +143,7 @@ export default function CheckoutForm() {
         }}
       >
         <H1Div ref={scrollRef}>
-          <H1> Billing Address </H1>
+          <H1> Shipping Address </H1>
           <Button
             type="reset"
             onClick={() => {
@@ -172,14 +153,9 @@ export default function CheckoutForm() {
                   first_name: "John",
                   last_name: "Smith",
                   address: "123 Street",
-                  country: "United States",
+                  country: "Sri Lanka",
                   zip: "12345",
                   city: "New York",
-                  state: "NY",
-                  CC: "1234567887654321",
-                  CVV: "123",
-                  month: "01",
-                  year: "2021",
                 },
               });
               setDisplay(false);
@@ -274,7 +250,7 @@ export default function CheckoutForm() {
               enableReinitialize={true}
             >
               {" "}
-              <Option value="US">United States</Option>
+              <Option value="SR">Sri Lanka</Option>
             </QSelect>
           </QuarterDiv>
           <QuarterDiv>
@@ -307,6 +283,7 @@ export default function CheckoutForm() {
               <ErrorDiv>{formik.errors.city}</ErrorDiv>
             )}
           </QuarterDiv>
+<<<<<<< HEAD
           <QuarterDiv>
             <H3>State</H3>
             <Input__Quarter
@@ -321,6 +298,8 @@ export default function CheckoutForm() {
               <ErrorDiv>{formik.errors.state}</ErrorDiv>
             )}
           </QuarterDiv>
+=======
+>>>>>>> 1a99612d306a3490e5be9624972fe65a48e1d45f
         </Row>
       </Checkout_Form>
     </Wrapper>
@@ -329,7 +308,7 @@ export default function CheckoutForm() {
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 180px;
 `;
 const Checkout_Form = styled.form`
   width: 100%;
@@ -545,7 +524,7 @@ const Date = styled.h2`
 const Button = styled.button`
   width: 100px;
   height: 32px;
-  background-color: red;
+  background-color: #808000;
   color: #fff;
   font-size: 16px;
   border-radius: 4px;
