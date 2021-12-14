@@ -60,6 +60,22 @@ export default function home() {
         img="https://i.ibb.co/SdwwgF3/shutterstock-1848217732.png"
         First
       />
+      <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
+      <div className="bannerOne">
+        <div className="oneText">
+          <h2>Our Vision</h2>
+          <p>
+            To build a community that appreciates and values eco-friendly
+            interior designs and to raise awareness of the importance of
+            eco-friendly interior decorations through raising awareness,
+            education, workforce development, partnerships, and resource
+            development.
+          </p>
+        </div>
+        <form action="/category?type=AllProducts">
+          <input type="submit" value="Shop Now" />
+        </form>
+      </div>
       <div className="vision-section">
         <h2>Our Company's Mission</h2>
         <div className="boxes">
@@ -122,23 +138,6 @@ export default function home() {
         </div>
       </div>
       <MainCont>
-        <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
-
-        <div className="bannerOne">
-          <div className="oneText">
-            <h2>Our Vision</h2>
-            <p>
-              To build a community that appreciates and values eco-friendly
-              interior designs and to raise awareness of the importance of
-              eco-friendly interior decorations through raising awareness,
-              education, workforce development, partnerships, and resource
-              development.
-            </p>
-          </div>
-          <form action="/category?type=AllProducts">
-            <input type="submit" value="Shop Now" />
-          </form>
-        </div>
         <div className="bannerTwo">
           <form action="/category?type=AllProducts">
             <input type="submit" value="Shop Now" />

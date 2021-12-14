@@ -918,7 +918,8 @@ desktop: "(min-width: 2562px)", */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
+  width: 90px;
+  height: 90px;
 }
 
 .facebook {
@@ -1063,7 +1064,10 @@ desktop: "(min-width: 2562px)", */
   flex-direction: row;
   text-align: center;
 }
-
+.bannerOne p,
+.bannerTwo p {
+  width: 70%;
+}
 .oneText,
 .twoText {
   text-align: center;
@@ -1082,7 +1086,8 @@ desktop: "(min-width: 2562px)", */
   }
 }
 
-.oneText h2, .twoText h2{
+.oneText h2,
+.twoText h2 {
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 10px;
