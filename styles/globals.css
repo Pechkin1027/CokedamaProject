@@ -857,9 +857,9 @@ textarea {
 }
 
 .vision-section h2 {
-  /* font-weight: bold; */
+  font-weight: bold;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 .vision-section p {
@@ -908,7 +908,8 @@ desktop: "(min-width: 2562px)", */
   }
 }
 .vision-box h2 {
-  /* font-weight: bold; */
+  font-weight: bold;
+  font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1081,9 +1082,9 @@ desktop: "(min-width: 2562px)", */
   }
 }
 
-.oneText h2,
-.twoText h2 {
-  font-size: 20px;
+.oneText h2, .twoText h2{
+  font-size: 30px;
+  font-weight: bold;
   padding-bottom: 10px;
 }
 
