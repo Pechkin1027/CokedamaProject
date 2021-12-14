@@ -3,7 +3,7 @@ import { sql_query } from "../../lib/db";
 const handler = async (_, res) => {
     try {
         const results = await sql_query(`
-            SELECT * FROM products
+            SELECT * FROM cokedama_products
             ORDER BY id DESC
         `);
         return res.json(results);
