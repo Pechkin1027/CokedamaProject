@@ -24,31 +24,26 @@ export default function contact() {
           <div className = "contactContainer">
             <div className = "contactSet">
               <div className = "setContent">
-                <label>First Name</label>
-                <input type = "text"/>
+                <input type = "text" placeholder = "First Name"/>
               </div>
             </div>
             <div className = "contactSet">
               <div className = "setContent">
-                <label>Last Name</label>
-                <input type = "text"/>
+                <input type = "text" placeholder = "Last Name"/>
               </div>
             </div>
             <div className = "contactSet">
               <div className = "setContent">
-                <label>Email Address</label>
-                <input type = "email"/>
+                <input type = "email" placeholder = "Email Address"/>
               </div>
             </div>
             <div className = "contactSet">
               <div className = "setContent">
-                <label>Phone Number</label>
-                <input type = "text"/>
+                <input type = "text" placeholder = "Phone Number"/>
               </div>
             </div><div className = "contactSet">
               <div className = "setContent">
-                <label>Message</label>
-                <textarea></textarea>
+                <textarea placeholder = "Your Message"></textarea>
               </div>
             </div>
             <div className = "contactSet">
