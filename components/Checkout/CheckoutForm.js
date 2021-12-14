@@ -111,7 +111,7 @@ export default function CheckoutForm() {
       parseFloat(formik.values.address.length) > 1 &&
       parseFloat(formik.values.zip.length) > 4 &&
       parseFloat(formik.values.city.length) > 1
-      ) 
+    )
       return true;
     else {
       return false;
@@ -283,23 +283,6 @@ export default function CheckoutForm() {
               <ErrorDiv>{formik.errors.city}</ErrorDiv>
             )}
           </QuarterDiv>
-<<<<<<< HEAD
-          <QuarterDiv>
-            <H3>State</H3>
-            <Input__Quarter
-              type="input"
-              name="state"
-              onBlur={formik.handleBlur}
-              onChange={formik.handleChange}
-              value={formik.values.state}
-              enableReinitialize={true}
-            />
-            {formik.errors.state && formik.touched.state && (
-              <ErrorDiv>{formik.errors.state}</ErrorDiv>
-            )}
-          </QuarterDiv>
-=======
->>>>>>> 1a99612d306a3490e5be9624972fe65a48e1d45f
         </Row>
       </Checkout_Form>
     </Wrapper>
