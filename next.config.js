@@ -10,7 +10,7 @@ module.exports = {
   env: {
     'MYSQL_HOST':'127.0.0.1',
     'MYSQL_DATABASE':'products',
-    'MYSQL_USERNAME':'root',
-    'MYSQL_PASSWORD':'',
+    'MYSQL_USERNAME':'cokedama',
+    'MYSQL_PASSWORD':'password',
   }
 };
