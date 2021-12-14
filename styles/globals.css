@@ -941,7 +941,7 @@ desktop: "(min-width: 2562px)", */
   padding-bottom: 100px;
   margin-bottom: 100px;
   background-repeat: no-repeat;
-  background-image: url("https://i.ibb.co/mtJ73vD/shutterstock-1848217774.jpg");
+  background-image: url("https://images.unsplash.com/photo-1578302758063-0ef3e048ca89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
 }
 
 .goalText {
@@ -1088,10 +1088,11 @@ desktop: "(min-width: 2562px)", */
 }
 
 .bannerOne form {
-  background-image: url("https://boulderhg.com/wp-content/uploads/2021/04/lighter-HouseplantParty-p75D-e1617649425355.jpg?width=1000&height=280&scale=both&crop=auto");
+  background-image: url("https://images.unsplash.com/photo-1578302758063-0ef3e048ca89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
   padding: 100px 10px;
   flex: 50%;
   display: inline-block;
+  background-position: center;
 }
 
 @media (max-width: 800px) {
@@ -1103,12 +1104,11 @@ desktop: "(min-width: 2562px)", */
 .bannerOne input {
   background-color: darkolivegreen;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 40px;
   border: none;
   width: fit-content;
-  height: 50px;
-  font-size: x-large;
+  font-size: 20px;
 }
 
 .twoText {
@@ -1117,10 +1117,11 @@ desktop: "(min-width: 2562px)", */
 }
 
 .bannerTwo form {
-  background-image: url("https://www.costafarms.com/CostaFarms/Kokedama-Blog-Header.jpg?width=1000&height=280&scale=both&crop=auto");
+  background-image: url("https://images.unsplash.com/photo-1629096346363-b96e4d9634a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   padding: 100px 10px;
   flex: 50%;
   display: inline-block;
+  background-position: bottom;
 }
 
 @media (max-width: 800px) {
@@ -1132,12 +1133,11 @@ desktop: "(min-width: 2562px)", */
 .bannerTwo input {
   background-color: darkolivegreen;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid rgb(75, 75, 75);
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: none;
   width: fit-content;
-  height: 50px;
-  font-size: x-large;
+  font-size: 20px;
 }
 
 .contactBanner {
