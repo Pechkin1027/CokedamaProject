@@ -34,8 +34,8 @@ const Header = styled.div`
   justify-content: center;
 `;
 const H2 = styled.h2`
-  font-size: 20px;
-  // font-weight: 500;
+  font-size: 30px;
+  font-weight: bold;
   text-align: center;
 `;
 const MainCont = styled.div`
