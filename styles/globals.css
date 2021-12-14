@@ -908,7 +908,8 @@ desktop: "(min-width: 2562px)", */
   }
 }
 .vision-box h2 {
-  /* font-weight: bold; */
+  font-weight: bold;
+  font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
