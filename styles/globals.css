@@ -1057,6 +1057,7 @@ desktop: "(min-width: 2562px)", */
   top: 160px;
 }
 .bannerOne {
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
