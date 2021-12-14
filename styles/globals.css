@@ -1056,10 +1056,13 @@ desktop: "(min-width: 2562px)", */
   position: relative;
   top: 160px;
 }
+.bannerOne {
+  margin-bottom: 100px;
+}
 
 .bannerOne,
 .bannerTwo {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   text-align: center;

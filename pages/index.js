@@ -60,7 +60,6 @@ export default function home() {
         img="https://i.ibb.co/SdwwgF3/shutterstock-1848217732.png"
         First
       />
-      <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
       <div className="bannerOne">
         <div className="oneText">
           <h2>Our Vision</h2>
@@ -75,6 +74,20 @@ export default function home() {
         <form action="/category?type=AllProducts">
           <input type="submit" value="Shop Now" />
         </form>
+      </div>
+      <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
+      <div className="bannerTwo">
+        <form action="/category?type=AllProducts">
+          <input type="submit" value="Shop Now" />
+        </form>
+        <div className="twoText">
+          <h2>Our Goal</h2>
+          <p>
+            To promote eco-friendly interior designing and inspire people to
+            pursue careers working with plants while finding meaningful creative
+            work to financially support them and their families.
+          </p>
+        </div>
       </div>
       <div className="vision-section">
         <h2>Our Company's Mission</h2>
@@ -137,21 +150,6 @@ export default function home() {
           </div>
         </div>
       </div>
-      <MainCont>
-        <div className="bannerTwo">
-          <form action="/category?type=AllProducts">
-            <input type="submit" value="Shop Now" />
-          </form>
-          <div className="twoText">
-            <h2>Our Goal</h2>
-            <p>
-              To promote eco-friendly interior designing and inspire people to
-              pursue careers working with plants while finding meaningful
-              creative work to financially support them and their families.
-            </p>
-          </div>
-        </div>
-      </MainCont>
     </PageLayout>
   );
 }
