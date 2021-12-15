@@ -37,7 +37,8 @@ const Wrapper = styled.a`
   justify-content: space-between;
   align-items: center;
   border: 1px solid #dedede;
-  width: 96%;
+  height: 400px;
+  width: 320px;
   flex-direction: column;
   background-color: white;
   margin-bottom: 20px;
@@ -52,9 +53,9 @@ const Wrapper = styled.a`
 
 const Image = styled.img`
   width: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  height: 240px;
   overflow: hidden;
+  object-fit: cover;
 `;
 
 const Container = styled.div`

@@ -61,6 +61,10 @@ const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
+  @media ${(props) => props.theme.tablet} {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 `;
