@@ -1098,11 +1098,11 @@ desktop: "(min-width: 2562px)", */
 }
 
 .bannerOne form {
-  background-image: url("https://images.unsplash.com/photo-1578302758063-0ef3e048ca89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
-  padding: 100px 10px;
+  background-image: url("https://i.ytimg.com/vi/qsd-8x14Z8o/maxresdefault.jpg");
+  padding: 200px 10px;
   flex: 50%;
   display: inline-block;
-  background-position: center;
+  background-position: bottom;
 }
 
 @media (max-width: 800px) {
@@ -1127,11 +1127,11 @@ desktop: "(min-width: 2562px)", */
 }
 
 .bannerTwo form {
-  background-image: url("https://images.unsplash.com/photo-1629096346363-b96e4d9634a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  padding: 100px 10px;
+  background-image: url("https://www.cockburnlibraries.com.au/wp-content/uploads/2021/05/Kokedama-trio-scaled.jpg");
+  padding: 150px 10px;
   flex: 50%;
   display: inline-block;
-  background-position: bottom;
+  background-position: center;
 }
 
 @media (max-width: 800px) {
