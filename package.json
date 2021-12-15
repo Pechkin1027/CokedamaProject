@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
     "@svgr/webpack": "^3.1.0",
     "formik": "^2.2.6",
     "hamburger-react": "^2.4.0",

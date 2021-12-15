@@ -3,8 +3,9 @@ import { Formik, Field, Form, ErrorMessage, useFormik } from "formik";
 import styled from "styled-components";
 import swal from "sweetalert";
 import { useRouter } from "next/router";
+import createOrder from "../../hooks/createOrder";
 
-export default function CheckoutForm() {
+export default function CheckoutForm({ handleCheckout }) {
   const router = useRouter();
 
   let scrollRef = useRef();
@@ -117,31 +118,30 @@ export default function CheckoutForm() {
       return false;
     }
   }
+  const handleOrder = (e) => {
+    e.preventDefault();
+    if (checkSubmission()) {
+      handleCheckout();
+      formik.resetForm(initialValues);
+      swal({
+        icon: "success",
+        title: "Successful Purchase",
+        text: "Thank You For Shopping With Us",
+      }).then((x) => {
+        localStorage.removeItem("Cart");
+        router.push("/");
+      });
+    } else {
+      setDisplay(true);
+      window.scrollTo({
+        behavior: "smooth",
+        top: scrollRef.current.offsetTop,
+      });
+    }
+  };
   return (
     <Wrapper id="wrap">
-      <Checkout_Form
-        id="my-form"
-        onSubmit={(e) => {
-          e.preventDefault();
-          if (checkSubmission()) {
-            formik.resetForm(initialValues);
-            swal({
-              icon: "success",
-              title: "Successful Purchase",
-              text: "Thank You For Shopping With Us",
-            }).then((x) => {
-              localStorage.removeItem("Cart");
-              router.push("/");
-            });
-          } else {
-            setDisplay(true);
-            window.scrollTo({
-              behavior: "smooth",
-              top: scrollRef.current.offsetTop,
-            });
-          }
-        }}
-      >
+      <Checkout_Form id="my-form" onSubmit={(e) => handleOrder(e)}>
         <H1Div ref={scrollRef}>
           <H1> Shipping Address </H1>
           <Button

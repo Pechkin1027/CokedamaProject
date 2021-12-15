@@ -5,6 +5,7 @@ import CheckoutForm from "./CheckoutForm";
 import CartItem from "./CartItem";
 import swal from "sweetalert";
 import { useRouter } from "next/router";
+import createOrder from "../../hooks/createOrder";
 
 export default function CheckoutContent() {
   const [TotalPrice, updateTotalPrice] = useState(0);
@@ -49,7 +50,9 @@ export default function CheckoutContent() {
     localStorage.setItem("Cart", JSON.stringify(newCart));
     updateCheckout(newCart);
   };
-
+  const handleCheckout = () => {
+    createOrder(Cart);
+  };
   return (
     <Wrapper>
       <Container>
@@ -67,7 +70,7 @@ export default function CheckoutContent() {
               ))}
             </Cart_Container>
           </Cart_Wrapper>
-          <CheckoutForm />
+          <CheckoutForm handleCheckout={handleCheckout} />
         </Col1>
         <Col2>
           <Wrap>
