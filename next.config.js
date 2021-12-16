@@ -8,9 +8,9 @@ module.exports = {
     return config;
   },
   env: {
-    "MYSQL_HOST":"192.168.64.2",
-    "MYSQL_DATABASE":"cokedama_products",
-    "MYSQL_USERNAME":"root",
-    "MYSQL_PASSWORD":"",
+    "MYSQL_HOST":"localhost",
+    "MYSQL_DATABASE":"products",
+    "MYSQL_USERNAME":"cokedama",
+    "MYSQL_PASSWORD":"password",
   }
 };
