@@ -8,7 +8,7 @@ module.exports = {
     return config;
   },
   env: {
-    "MYSQL_HOST":"192.168.64.2",
+    "MYSQL_HOST":"localhost",
     "MYSQL_DATABASE":"cokedama_products",
     "MYSQL_USERNAME":"cokedama_user1",
     "MYSQL_PASSWORD":"nospecialchars123",
