@@ -50,8 +50,8 @@ export default function CheckoutContent() {
     localStorage.setItem("Cart", JSON.stringify(newCart));
     updateCheckout(newCart);
   };
-  const handleCheckout = () => {
-    createOrder(Cart);
+  const handleCheckout = (inputs) => {
+    createOrder({ Cart, inputs });
   };
   return (
     <Wrapper>
