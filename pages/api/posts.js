@@ -4,7 +4,7 @@ const handler = async (_, res) => {
     try {
         const results = await sql_query(`
             SELECT * FROM products
-            ORDER BY id
+             ORDER BY id
         `);
         return res.json(results);
     } catch (e) {
