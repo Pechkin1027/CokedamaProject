@@ -13,22 +13,3 @@ const handler = async (_, res) => {
 };
 
 export default handler;
-
-// const {
-// 	createPool
-// } = require('mysql');
-
-// const pool = createPool({
-// 	host: "192.168.64.2",
-// 	user: "cokedama_user1",
-// 	password: "nospecialchars123",
-// 	database: "cokedama_products",
-// 	connectionLimit: 10
-// })
-
-// pool.query(`select * from products`, (err, result, fields)=>{
-// 	if (err) {
-// 		return console.log(err);
-// 	}
-// 	return console.log(result);
-// })
