@@ -61,6 +61,11 @@ const MainCont = styled.div`
     width: ${(props) => (props.type === "PRODUCT" ? "1000px" : "100%")};
   }
   @media ${(props) => props.theme.laptopL} {
-    width: ${(props) => (props.type === "PRODUCT" ? "1220px" : "1680px")};
+    width: ${(props) =>
+      props.type === "PRODUCT"
+        ? "1220px"
+        : props.type === "HOME"
+        ? "1680px"
+        : ""};
   }
 `;
