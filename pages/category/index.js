@@ -3,11 +3,12 @@ import PageLayout from "../../components/PageLayout";
 import styled from "styled-components";
 import Header from "../../components/Collection/Header";
 import MainSection from "../../components/Collection/MainSection";
+import { AllProducts } from "../../data/Category";
 
 export default function Collection() {
   const [sort, setSort] = useState("");
   const [group, setGroup] = useState("All Items");
-
+  const [data, setData] = useState(AllProducts);
   const urlq = {
     KokedamaPlants: "Kokedama Plants",
     KokedamaStringGardens: "Kokedama String Gardens",
@@ -26,7 +27,14 @@ export default function Collection() {
     const myParam = urlParams.get("type");
     if (myParam) setGroup(urlq[myParam]);
   }, []);
-
+  useEffect(() => {
+    if (group === "All Items") {
+      setData(AllProducts);
+      return;
+    }
+    setData(AllProducts.filter((info) => info.category === group));
+  }, [group]);
+  console.log(data);
   return (
     <PageLayout>
       <Wrapper>
@@ -37,6 +45,7 @@ export default function Collection() {
             sort={sort}
             setGroup={setGroup}
             group={group}
+            data={data}
           />
         </Container>
       </Wrapper>

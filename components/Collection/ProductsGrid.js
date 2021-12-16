@@ -11,7 +11,7 @@ export default function ProductsGrid(props) {
 
   return (
     <Wrapper>
-      {filteredData.map((item, index) => {
+      {filteredData.map((item) => {
         return <Product key={item.id} data={item} />;
       })}
       <Empty />
