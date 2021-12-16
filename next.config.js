@@ -9,7 +9,7 @@ module.exports = {
   },
   env: {
     "MYSQL_HOST":"localhost",
-    "MYSQL_DATABASE":"cokedama_products",
+    "MYSQL_DATABASE":"products",
     "MYSQL_USERNAME":"cokedama_user1",
     "MYSQL_PASSWORD":"nospecialchars123",
   }
