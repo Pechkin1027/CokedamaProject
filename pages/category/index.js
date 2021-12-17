@@ -52,10 +52,20 @@ export default function Collection({ AllProducts }) {
   );
 }
 export async function getStaticProps() {
-  const res = await fetch("https://cokedama.lk/api/product");
+  const res = await fetch("https://cokedama.lk/api/posts");
   const data = await res.json();
-  console.log(data);
-  return { props: { AllProducts: data } };
+  const AllProducts = data.map((info) => {
+    const img = [];
+    for (let i = 0; i < 5; i++) {
+      const newImg = info[`img${i}`];
+      if (newImg) {
+        img.push(newImg);
+      }
+    }
+    return { ...info, img };
+  });
+  console.log(AllProducts);
+  return { props: { AllProducts } };
 }
 const Wrapper = styled.div`
   width: 100%;

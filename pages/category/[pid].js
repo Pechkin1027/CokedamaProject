@@ -33,7 +33,20 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  return { props: { data: AllProducts[params.pid] } };
+  const res = await fetch("https://cokedama.lk/api/posts");
+  const data = await res.json();
+  const AllProducts = data.map((info) => {
+    const img = [];
+    for (let i = 0; i < 5; i++) {
+      const newImg = info[`img${i}`];
+      if (newImg) {
+        img.push(newImg);
+      }
+    }
+    return { ...info, img };
+  });
+  const single = AllProducts.filter((info) => info.id == params.pid)[0];
+  return { props: { data: single } };
 }
 const MainCont = styled.div`
   display: flex;

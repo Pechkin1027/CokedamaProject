@@ -4,8 +4,8 @@ import ImageGallery from "react-image-gallery";
 import { AiFillStar } from "react-icons/ai";
 
 function Product({ data, handleAddToCart }) {
-  const [size, setSize] = useState(data.sizes[0]);
-  const [color, setColor] = useState(data.color[0]);
+  // const [size, setSize] = useState(data.sizes[0]);
+  // const [color, setColor] = useState(data.color[0]);
   const [quantity, setQuantity] = useState(1);
 
   const handleAdd = () => {
@@ -19,19 +19,19 @@ function Product({ data, handleAddToCart }) {
       id: data.id,
     });
   };
-  const galleryorder = {
-    [data.color[0]]: 0,
-    [data.color[1]]: data.imgNum,
-    [data.color[2]]: data.imgNum * 2,
-    [data.color[3]]: data.imgNum * 3,
-  };
+  // const galleryorder = {
+  //   [data.color[0]]: 0,
+  //   [data.color[1]]: data.imgNum,
+  //   [data.color[2]]: data.imgNum * 2,
+  //   [data.color[3]]: data.imgNum * 3,
+  // };
   const gallery = useRef(null);
 
-  const handleColor = (e) => {
-    let value = e.target.value;
-    setColor(value);
-    gallery.current.slideToIndex(galleryorder[value]);
-  };
+  // const handleColor = (e) => {
+  //   let value = e.target.value;
+  //   setColor(value);
+  //   gallery.current.slideToIndex(galleryorder[value]);
+  // };
   const handleQuantity = (e) => {
     let value = e.target.value;
     setQuantity(Number(value));
@@ -43,7 +43,7 @@ function Product({ data, handleAddToCart }) {
         <Gallery>
           <ImageGallery
             ref={gallery}
-            items={data?.img.map((info) => {
+            items={data?.img?.map((info) => {
               return { original: info, thumbnail: info };
             })}
             showPlayButton={false}
@@ -62,7 +62,7 @@ function Product({ data, handleAddToCart }) {
             <Reviews>{data.reviews}</Reviews>
           </Ratings>
           <Product__Price>Rs {data.price}</Product__Price>
-          {data.sizes.length > 0 && (
+          {/* {data.sizes.length > 0 && (
             <Size>
               <SubTitle>Size: {size}</SubTitle>
               <ButtonCont>
@@ -78,8 +78,8 @@ function Product({ data, handleAddToCart }) {
                 ))}
               </ButtonCont>
             </Size>
-          )}
-          {data.color.length > 1 && (
+          )} */}
+          {/* {data.color.length > 1 && (
             <Color>
               <SubTitle>Color: {color}</SubTitle>
               <Select onChange={(e) => handleColor(e)} value={color}>
@@ -88,7 +88,7 @@ function Product({ data, handleAddToCart }) {
                 ))}
               </Select>
             </Color>
-          )}
+          )} */}
           <Quantity>
             <SubTitle>Quantity:</SubTitle>
             <Select onChange={(e) => handleQuantity(e)} value={quantity}>
