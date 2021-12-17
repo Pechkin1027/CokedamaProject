@@ -22,13 +22,7 @@ export default function NavOption({ type, isTablet, isMobile, url }) {
         <>
           <Cart /> <CartNumber>{cartItems}</CartNumber>
         </>
-      ) : type === "account" ? (
-        <BsPerson />
-      ) : type === "bell" ? (
-        <VscBell />
-      ) : (
-        <BsPerson />
-      )}
+      ) : type === "account"}
       <Title
         type={type}
         hide={isMobile && (type === "cart" || type === "bell")}
@@ -36,13 +30,10 @@ export default function NavOption({ type, isTablet, isMobile, url }) {
         {type === "cart"
           ? "Cart"
           : type === "account"
-          ? "Account"
-          : type === "bell"
-          ? "Notifications"
-          : "Club O"}
+      }
       </Title>
       <Connect></Connect>
-      {!(type === "cart") ? (
+      {/* {!(type === "cart") ? (
         <DropDownDiv>
           {type === "bell" ? (
             <Img2 src={"/Alarm.svg"} />
@@ -65,7 +56,7 @@ export default function NavOption({ type, isTablet, isMobile, url }) {
             </>
           )}
         </DropDownDiv>
-      ) : null}
+      ) : null} */}
     </Container>
   );
 }

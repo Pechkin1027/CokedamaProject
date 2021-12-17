@@ -1257,4 +1257,7 @@ desktop: "(min-width: 2562px)", */
 .copyright {
   font-size: 12px;
   font-weight: lighter;
+  padding: 10px;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
