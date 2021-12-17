@@ -52,7 +52,7 @@ export default function Collection({ AllProducts }) {
   );
 }
 export async function getStaticProps() {
-  const res = await fetch("https://cokedama.lk/api/products");
+  const res = await fetch("https://cokedama.lk/api/product");
   const data = await res.json();
   console.log(data);
   return { props: { AllProducts: data } };
