@@ -46,10 +46,11 @@ export default function handler(req, res) {
 
   const msg = {
     to: customer_email,
-    from: "cokedamaplantscaping@gmail.com", // Use the email address or domain you verified above
+    from: "mbarnes2k5@gmail.com", // Use the email address or domain you verified above
     subject: "Cokedama Order Received",
     text: "Ruchira, your order of: " + message + " Has been completed.",
   };
+
   console.log(msg.text);
   // async () => {
   //   try {
