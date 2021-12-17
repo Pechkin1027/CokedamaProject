@@ -7,6 +7,7 @@ const Footer = () => {
       <Container>
           <div className="slogan">
             <h3>Grow a little love with little plants.</h3>
+            Copyright 2021 © Cokedama. All rights reserved.
           </div>
           {/* <Col1>
             <H2>Cokedama Plantscaping</H2>
