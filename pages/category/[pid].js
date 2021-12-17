@@ -28,7 +28,7 @@ export async function getStaticPaths() {
   const res = await fetch("https://cokedama.lk/api/posts");
   const data = await res.json();
   const paths = data.map((info) => ({
-    params: { pid: info.id },
+    params: { pid: info.id + "" },
   }));
   return { paths, fallback: false };
 }
