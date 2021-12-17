@@ -108,9 +108,6 @@ export default function about() {
           </p>
         </div>
       </div>
-      <div className="slogan">
-        <h3>Grow a little love with little plants.</h3>
-      </div>
     </PageLayout>
   );
 }

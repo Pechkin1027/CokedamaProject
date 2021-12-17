@@ -7,7 +7,7 @@ const Footer = () => {
       <Container>
           <div className="slogan">
             <h3>Grow a little love with little plants.</h3>
-            Copyright 2021 © Cokedama. All rights reserved.
+            <div className="copyright">Copyright 2021 © Cokedama. All rights reserved.</div>
           </div>
           {/* <Col1>
             <H2>Cokedama Plantscaping</H2>
@@ -42,7 +42,7 @@ const Wrapper = styled.div`
   width: 100%;
   background-color: #444;
   color: white;
-  line-height: 1.2;
+  line-height: 0.6;
 `;
 const Container = styled.div`
   justify-content: space-between;

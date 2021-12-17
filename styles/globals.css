@@ -1254,3 +1254,7 @@ desktop: "(min-width: 2562px)", */
   font-size: 18px;
   letter-spacing: 5px;
 }
+.copyright {
+  font-size: 12px;
+  font-weight: lighter;
+}
