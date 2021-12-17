@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <MainCont>
+    <Wrapper>
       <Container>
         <UpperHalf>
           <div className="slogan">
@@ -34,7 +34,7 @@ const Footer = () => {
           </Col2> */}
         </UpperHalf>
       </Container>
-    </MainCont>
+    </Wrapper>
   );
 };
 export default Footer;
@@ -42,7 +42,6 @@ export default Footer;
 const Wrapper = styled.div`
   width: 100%;
   background-color: #444;
-  flex-direction: column;
   color: white;
   line-height: 1.2;
 `;
