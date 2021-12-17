@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <Wrapper>
       <Container>
         <UpperHalf>
           <div className="slogan">
@@ -34,7 +33,6 @@ const Footer = () => {
           </Col2> */}
         </UpperHalf>
       </Container>
-    </Wrapper>
   );
 };
 export default Footer;
