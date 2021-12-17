@@ -121,7 +121,7 @@ export default function CheckoutForm({ handleCheckout }) {
   const handleOrder = (e) => {
     e.preventDefault();
     if (checkSubmission()) {
-      handleCheckout();
+      handleCheckout(formik.values);
       formik.resetForm(initialValues);
       swal({
         icon: "success",
