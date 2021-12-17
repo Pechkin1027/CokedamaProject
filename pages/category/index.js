@@ -54,7 +54,7 @@ export default function Collection({ AllProducts }) {
 export async function getStaticProps() {
   const res = await fetch("https://cokedama.lk/api/posts");
   const data = await res.json();
-  const AllProducts = data.map((info) => {
+  const AllProducts = data?.map((info) => {
     const img = [];
     for (let i = 0; i < 5; i++) {
       const newImg = info[`img${i}`];

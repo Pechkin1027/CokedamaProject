@@ -30,14 +30,14 @@ export async function getStaticPaths() {
   // const paths = data?.map((info) => ({
   //   params: { pid: info.id + "" },
   // }));
-  const tempPath = [{ params: "1" }];
+  const tempPath = [{ params: { pid: "1" } }];
   return { paths: tempPath, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
   const res = await fetch("https://cokedama.lk/api/posts");
   const data = await res.json();
-  const AllProducts = data.map((info) => {
+  const AllProducts = data?.map((info) => {
     const img = [];
     for (let i = 0; i < 5; i++) {
       const newImg = info[`img${i}`];
@@ -47,7 +47,7 @@ export async function getStaticProps({ params }) {
     }
     return { ...info, img };
   });
-  const single = AllProducts.filter((info) => info.id == params.pid)[0];
+  const single = AllProducts?.filter((info) => info.id == params.pid)[0];
   return { props: { data: single } };
 }
 const MainCont = styled.div`
