@@ -4,7 +4,6 @@ import PageLayout from "../../components/PageLayout";
 import Product from "../../components/ProductPage/Product";
 import OverView from "../../components/ProductPage/Overview";
 import Returns from "../../components/ProductPage/Returns";
-import { AllProducts } from "../../data/Category";
 import { useRouter } from "next/router";
 
 export default function ProductPage({ data }) {
@@ -26,7 +25,9 @@ export default function ProductPage({ data }) {
   );
 }
 export async function getStaticPaths() {
-  const paths = AllProducts.map((info) => ({
+  const res = await fetch("https://cokedama.lk/api/posts");
+  const data = await res.json();
+  const paths = data.map((info) => ({
     params: { pid: info.id },
   }));
   return { paths, fallback: false };
