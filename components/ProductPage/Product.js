@@ -10,9 +10,7 @@ function Product({ data, handleAddToCart }) {
 
   const handleAdd = () => {
     handleAddToCart({
-      size,
       quantity,
-      color,
       price: data.price,
       name: data.name,
       img: data.img[0],
