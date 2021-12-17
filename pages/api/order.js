@@ -59,7 +59,7 @@ export default function handler(req, res) {
   }
 
   const msg = {
-    to: "cokedamainterio@gmail.com",
+    to: ["cokedamainterio@gmail.com", "cokedamaplantscaping@gmail.com"],
     from: "mbarnes2k5@gmail.com", // Use the email address or domain you verified above
     subject: "Cokedama Order Up",
     text:

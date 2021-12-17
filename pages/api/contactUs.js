@@ -19,7 +19,7 @@ export default function handler(req, res) {
   console.log(customer_message);
 
   const msg = {
-    to: "mbarnes2k5@gmail.com",
+    to: ["cokedamaplantscaping@gmail.com", "cokedamainterio@gmail.com"],
     from: "mbarnes2k5@gmail.com", // Use the email address or domain you verified above
     subject: "A message from your customer!",
     text:
