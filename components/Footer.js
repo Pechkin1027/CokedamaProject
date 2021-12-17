@@ -42,7 +42,7 @@ const Wrapper = styled.div`
   width: 100%;
   background-color: #444;
   color: white;
-  line-height: 1.2;
+  line-height: 0.6;
 `;
 const Container = styled.div`
   justify-content: space-between;
