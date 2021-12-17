@@ -5,8 +5,9 @@ import Product from "../../components/ProductPage/Product";
 import OverView from "../../components/ProductPage/Overview";
 import Returns from "../../components/ProductPage/Returns";
 import { useRouter } from "next/router";
+import { AllProducts } from "../../data/Category";
 
-export default function ProductPage({ data }) {
+export default function ProductPage({ data = {} }) {
   const router = useRouter();
   const handleAddToCart = (info) => {
     let Cart = JSON.parse(localStorage.getItem("Cart")) || [];
@@ -25,28 +26,28 @@ export default function ProductPage({ data }) {
   );
 }
 export async function getStaticPaths() {
-  const res = await fetch("https://cokedama.lk/api/posts");
-  const data = await res.json();
-  // const paths = data?.map((info) => ({
-  //   params: { pid: info.id + "" },
-  // }));
-  const tempPath = [{ params: { pid: "1" } }];
-  return { paths: tempPath, fallback: false };
+  // const res = await fetch("https://cokedama.lk/api/posts");
+  // const data = await res.json();
+  const paths = AllProducts?.map((info) => ({
+    params: { pid: info.id + "" },
+  }));
+  // const tempPath = [{ params: { pid: "1" } }];
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
-  const res = await fetch("https://cokedama.lk/api/posts");
-  const data = await res.json();
-  const AllProducts = data?.map((info) => {
-    const img = [];
-    for (let i = 0; i < 5; i++) {
-      const newImg = info[`img${i}`];
-      if (newImg) {
-        img.push(newImg);
-      }
-    }
-    return { ...info, img };
-  });
+  // const res = await fetch("https://cokedama.lk/api/posts");
+  // const data = await res.json();
+  // const AllProducts = data?.map((info) => {
+  //   const img = [];
+  //   for (let i = 0; i < 5; i++) {
+  //     const newImg = info[`img${i}`];
+  //     if (newImg) {
+  //       img.push(newImg);
+  //     }
+  //   }
+  //   return { ...info, img };
+  // });
   const single = AllProducts?.filter((info) => info.id == params.pid)[0];
   return { props: { data: single } };
 }

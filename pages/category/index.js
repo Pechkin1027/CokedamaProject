@@ -3,6 +3,7 @@ import PageLayout from "../../components/PageLayout";
 import styled from "styled-components";
 import Header from "../../components/Collection/Header";
 import MainSection from "../../components/Collection/MainSection";
+import { AllProducts } from "../../data/Category";
 
 export default function Collection({ AllProducts }) {
   const [sort, setSort] = useState("");
@@ -52,19 +53,19 @@ export default function Collection({ AllProducts }) {
   );
 }
 export async function getStaticProps() {
-  const res = await fetch("https://cokedama.lk/api/posts");
-  const data = await res.json();
-  const AllProducts = data?.map((info) => {
-    const img = [];
-    for (let i = 0; i < 5; i++) {
-      const newImg = info[`img${i}`];
-      if (newImg) {
-        img.push(newImg);
-      }
-    }
-    return { ...info, img };
-  });
-  console.log(AllProducts);
+  // const res = await fetch("https://cokedama.lk/api/posts");
+  // const data = await res.json();
+  // const AllProducts = data?.map((info) => {
+  //   const img = [];
+  //   for (let i = 0; i < 5; i++) {
+  //     const newImg = info[`img${i}`];
+  //     if (newImg) {
+  //       img.push(newImg);
+  //     }
+  //   }
+  //   return { ...info, img };
+  // });
+  // console.log(AllProducts);
   return { props: { AllProducts } };
 }
 const Wrapper = styled.div`
