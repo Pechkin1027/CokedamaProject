@@ -27,10 +27,11 @@ export default function ProductPage({ data }) {
 export async function getStaticPaths() {
   const res = await fetch("https://cokedama.lk/api/posts");
   const data = await res.json();
-  const paths = data.map((info) => ({
-    params: { pid: info.id + "" },
-  }));
-  return { paths, fallback: false };
+  // const paths = data?.map((info) => ({
+  //   params: { pid: info.id + "" },
+  // }));
+  const tempPath = [{ params: "1" }];
+  return { paths: tempPath, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
