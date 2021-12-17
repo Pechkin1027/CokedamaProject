@@ -13,11 +13,16 @@ export default function FilterSection({
 }) {
   let prices = ["Under Rs 1500", "Rs 1500 - Rs 2000", "Over Rs 2000"];
   let categories = [
-    "Snake Plants",
-    "Money Plants",
-    "Other Kokedama Plants",
+    "Kokedama Plants",
+    "Kokedama String Gardens",
+    "Decayed Wood Plant Arrangements",
     "All Items",
-    "Etc",
+    "Terrariums",
+    "Plant Art",
+    "Decorative Pots",
+    "Decorative Planters",
+    "Plant Themed Photo Frames",
+    "Plant Themed Home Decor"
   ];
 
   return (
@@ -63,7 +68,6 @@ const Wrapper = styled.div`
   border-top: 1px solid #dadcdf;
   padding-top: 16px;
   margin-bottom: 16px;
-  max-height: 300px;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;

@@ -5,6 +5,7 @@ import CheckoutForm from "./CheckoutForm";
 import CartItem from "./CartItem";
 import swal from "sweetalert";
 import { useRouter } from "next/router";
+import createOrder from "../../hooks/createOrder";
 
 export default function CheckoutContent() {
   const [TotalPrice, updateTotalPrice] = useState(0);
@@ -49,7 +50,9 @@ export default function CheckoutContent() {
     localStorage.setItem("Cart", JSON.stringify(newCart));
     updateCheckout(newCart);
   };
-
+  const handleCheckout = (inputs) => {
+    createOrder({ Cart, inputs });
+  };
   return (
     <Wrapper>
       <Container>
@@ -67,7 +70,7 @@ export default function CheckoutContent() {
               ))}
             </Cart_Container>
           </Cart_Wrapper>
-          <CheckoutForm />
+          <CheckoutForm handleCheckout={handleCheckout} />
         </Col1>
         <Col2>
           <Wrap>
@@ -223,7 +226,7 @@ const Red = styled.div`
 
 const Button = styled.button`
   width: 100%;
-  background-color: ${(props) => (props.Empty ? "#0272a2" : "#27865f")};
+  background-color: #808000;
   color: #fff;
   font-size: 18px;
   border-radius: 4px;

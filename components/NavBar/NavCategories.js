@@ -3,11 +3,16 @@ import Styled from "styled-components";
 
 export default function NavCategories(props) {
   let categories = [
-    { name: "Money Plants" },
-    { name: "Other Kokedama Plants" },
-    { name: "Snake Plants" },
+    { name: "Kokedama Plants" },
+    { name: "Kokedama String Gardens" },
+    { name: "Decayed Wood Plant Arrangements" },
     { name: "All Items" },
-    { name: "Etc." },
+    { name: "Terrariums" },
+    { name: "Plant Art" },
+    { name: "Decorative Pots" },
+    { name: "Decorative Planters" },
+    { name: "Plant Themed Photo Frames" },
+    { name: "Plant Themed Home Decor" },
   ];
   return (
     <Wrapper>

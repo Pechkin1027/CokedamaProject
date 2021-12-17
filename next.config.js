@@ -7,4 +7,10 @@ module.exports = {
 
     return config;
   },
+  env: {
+    "MYSQL_HOST":"138.128.160.186",
+    "MYSQL_DATABASE":"cokedama_products",
+    "MYSQL_USERNAME":"cokedama_user1",
+    "MYSQL_PASSWORD":"nospecialchars123",
+  }
 };

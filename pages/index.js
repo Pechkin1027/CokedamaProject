@@ -16,38 +16,38 @@ export default function home() {
   ];
   let category1 = [
     {
-      name: "Snake Plants",
-      description: "Sansevieria Zeylancia",
+      name: "Kokedama Plants",
+      //description: "Sansevieria Zeylancia",
       img: "https://www.succulentsurprise.com.au/images/products/large/ksg6xpx66i.jpg",
-      urlQuery: "SnakePlants",
+      urlQuery: "KokedamaPlants",
     },
     {
-      name: "Money Plants",
-      description: "Goldon Pothos",
-      img: "https://i.ibb.co/sj3fv49/planter-montsera-1600x.png",
-      urlQuery: "MoneyPlants",
+      name: "Kokedama String Gardens",
+      //description: "Goldon Pothos",
+      img: "https://i.ibb.co/0GCNfky/String-Garden.jpg",
+      urlQuery: "KokedamaStringGardens",
     },
     {
-      name: "Other Kokedama Plants",
-      description: "Aglaonema, Diffenbachia*, etc.",
-      img: "https://i.ibb.co/YZNbm3j/images.jpg",
-      urlQuery: "OtherKokedamaPlants",
+      name: "Decayed Wood Plant Arrangements",
+      //description: "Aglaonema, Diffenbachia*, etc.",
+      img: "https://i.ibb.co/NmV5RJs/Decayed.jpg",
+      urlQuery: "DecayedWoodPlantArrangements",
+    },
+    {
+      name: "Decorative Planters",
+      img: "https://i.ibb.co/C9STdsW/Cloth-Planters.jpg",
+      urlQuery: "DecorativePlanters",
+    },
+    {
+      name: "Terrariums",
+      //description: "Potted Plants, Greeting Cards, and more",
+      img: "https://i.ibb.co/zhmZcy7/Terarium.jpg",
+      urlQuery: "Terrariums",
     },
     {
       name: "All Items",
-      description: "All of our items",
+      //description: "All of our items",
       img: "https://i.ibb.co/SrDSvsd/Plants-01.jpg",
-      urlQuery: "AllItems",
-    },
-    {
-      name: "Etc.",
-      description: "Potted Plants, Greeting Cards, and more",
-      img: "https://i.ibb.co/Snp3xFk/face-full-of-flowers-thank-you-card-boxed-set-red-cap-greeting-cards-boston-general-store-2806200814.jpg",
-      urlQuery: "Etc",
-    },
-    {
-      name: "GROW a little love with little PLANTS",
-      img: "https://i.ibb.co/S6b2HbK/Kokedama-japanese-moss-ball-plant-in-female-hands-Gardening-at-home-Vector-illustration.jpg",
       urlQuery: "AllItems",
     },
   ];
@@ -60,9 +60,38 @@ export default function home() {
         img="https://i.ibb.co/SdwwgF3/shutterstock-1848217732.png"
         First
       />
+      <div className="bannerOne">
+        <div className="oneText">
+          <h2>Our Vision</h2>
+          <p>
+            To build a community that appreciates and values eco-friendly
+            interior designs and to raise awareness of the importance of
+            eco-friendly interior decorations through raising awareness,
+            education, workforce development, partnerships, and resource
+            development.
+          </p>
+        </div>
+        <form action="/category?type=AllProducts">
+          <input type="submit" value="Shop Now" />
+        </form>
+      </div>
+      <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
+      <div className="bannerTwo">
+        <form action="/category?type=AllProducts">
+          <input type="submit" value="Shop Now" />
+        </form>
+        <div className="twoText">
+          <h2>Our Goal</h2>
+          <p>
+            To promote eco-friendly interior designing and inspire people to
+            pursue careers working with plants while finding meaningful creative
+            work to financially support them and their families.
+          </p>
+        </div>
+      </div>
       <div className="vision-section">
         <h2>Our Company's Mission</h2>
-        <div className="vision-row1">
+        <div className="boxes">
           <div className="vision-box">
             <img src={"Awareness.png"} />
             <h2>Awareness</h2>
@@ -95,8 +124,6 @@ export default function home() {
               diversifying and broadening the base of advocates and supporters.
             </p>
           </div>
-        </div>
-        <div className="vision-row2">
           <div className="vision-box">
             <img src="Eco Friendly.png" />
             <h2>Eco-Friendly</h2>
@@ -123,47 +150,6 @@ export default function home() {
           </div>
         </div>
       </div>
-      <MainCont>
-        <div className = "bannerOne">
-          <div className = "oneText">
-            <h2>Kokedama</h2>
-            <p>A free-form variant of traditional bonsai that is easy to try at home</p>
-          </div>
-          <form action = "http://localhost:3000/category?type=MoneyPlants">
-              <input type = "submit" value = "Shop Now"/>
-          </form>
-          <img src = "https://i.ibb.co/vwXndX8/shutterstock-1825228952.jpg" />
-        </div>
-        {/* <JumboSaleDisplay
-          img="https://i.ibb.co/vwXndX8/shutterstock-1825228952.jpg"
-          url="/category?type=MoneyPlants"
-          title="Kokedama"
-          text="A free-form variant of traditional bonsai that is easy to try at home"
-        /> */}
-        <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
-        <div className = "bannerTwo">
-          <div className = "twoText">
-            <h2>Our Goal</h2>
-            <p>To promote eco-friendly interior designing and
-          inspire people to pursue careers working with plants while finding
-          meaningful creative work to financially support them and their
-          families.</p>
-          </div>
-          <form action = "http://localhost:3000/category?type=MoneyPlants">
-              <input type = "submit" value = "Shop Now"/>
-          </form>
-          <img src = "https://i.ibb.co/6N0r0ws/shutterstock-1711748359.jpg" />
-        </div>
-        {/* <JumboSaleDisplay
-          img="https://i.ibb.co/6N0r0ws/shutterstock-1711748359.jpg"
-          url="/category?type=SnakePlants"
-          title="Our Goal"
-          text="To promote eco-friendly interior designing and
-          inspire people to pursue careers working with plants while finding
-          meaningful creative work to financially support them and their
-          families."
-        /> */}
-      </MainCont>
     </PageLayout>
   );
 }

@@ -851,35 +851,65 @@ textarea {
   }
 }
 .vision-section {
-  display: grid;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   text-align: center;
 }
 
 .vision-section h2 {
-  /* font-weight: bold; */
+  font-weight: bold;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
-
-.vision-row1,
-.vision-row2 {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  /* background-color: aquamarine; */
+.vision-section p {
+  width: 70%;
+  text-align: center;
 }
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* mobileS: "(min-width: 322px)",
+mobileM: "(min-width: 377px)",
+mobileL: "(min-width: 427px)",
+mobileXL: "(min-width: 540px)",
+tablet: "(min-width: 770px)",
+tabletL: "(min-width: 960px)",
+laptop: "(min-width: 1026px)",
+laptopM: "(min-width: 1222px)",
+laptopL: "(min-width: 1442px)",
+laptopSL: "(min-width: 1922px)",
+desktop: "(min-width: 2562px)", */
 
 .vision-box {
-  /* background-color: lightcoral; */
-  height: 400px;
   text-align: center;
-  margin: 20px;
+  width: 100%;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
 }
-
+@media (min-width: 540px) {
+  .vision-box {
+    padding: 40px;
+    width: calc(50% - 80px);
+  }
+}
+@media (min-width: 960px) {
+  .vision-box {
+    width: calc(33% - 20px);
+  }
+}
+@media (min-width: 1026px) {
+  .vision-box {
+    width: calc(25% - 20px);
+  }
+}
 .vision-box h2 {
-  /* font-weight: bold; */
+  font-weight: bold;
+  font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -888,7 +918,8 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 90px;
+  height: 90px;
 }
 
 .facebook {
@@ -912,7 +943,7 @@ textarea {
   padding-bottom: 100px;
   margin-bottom: 100px;
   background-repeat: no-repeat;
-  background-image: url("https://i.ibb.co/mtJ73vD/shutterstock-1848217774.jpg");
+  background-image: url("https://images.unsplash.com/photo-1578302758063-0ef3e048ca89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
 }
 
 .goalText {
@@ -1018,94 +1049,108 @@ textarea {
   overflow: hidden;
 }
 
-.aboutStory img{
+.aboutStory img {
   float: right;
   border-radius: 40px;
   overflow: hidden;
   position: relative;
   top: 160px;
 }
-
 .bannerOne {
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
-.bannerOne img{
-  float: right;
-  width: 50%;
-}
-
-.bannerOne form{
-  position: relative;
-  top: 195px;
-  left: 20%;  
-}
-
-.bannerOne input{
-  background-color: darkolivegreen;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  width: 10%;
-  height: 50px;
-  font-size: x-large;
-}
-
-.oneText {
-  float: left;
-  width: 50%;
-  text-align: center;
-  padding-top: 150px;
-}
-
-.oneText h2{
-  font-weight: bold;
-  font-size: xx-large;
-  padding-bottom: 15px;
-}
-
+.bannerOne,
 .bannerTwo {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.bannerOne p,
+.bannerTwo p {
+  width: 70%;
+}
+.oneText,
+.twoText {
+  text-align: center;
+  padding: 10px 20px;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.bannerTwo img{
-  float: left;
-  width: 50%;
+@media (max-width: 800px) {
+  .oneText,
+  .twoText {
+    padding: 20px 20px;
+  }
 }
 
-.bannerTwo form{
-  position: relative;
-  top: 195px;
-  left: 20%;  
+.oneText h2,
+.twoText h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
-.bannerTwo input{
+.bannerOne form {
+  background-image: url("https://i.ytimg.com/vi/qsd-8x14Z8o/maxresdefault.jpg");
+  padding: 200px 10px;
+  flex: 50%;
+  display: inline-block;
+  background-position: bottom;
+}
+
+@media (max-width: 800px) {
+  .bannerOne {
+    flex-direction: column;
+  }
+}
+
+.bannerOne input {
   background-color: darkolivegreen;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 40px;
   border: none;
-  width: 10%;
-  height: 50px;
-  font-size: x-large;
+  width: fit-content;
+  font-size: 20px;
 }
 
 .twoText {
-  float: right;
-  width: 45%;
-  right: 3%;
+  flex: 50%;
   text-align: center;
-  padding-top: 150px;
 }
 
-.twoText h2{
-  font-weight: bold;
-  font-size: xx-large;
-  padding-bottom: 15px;
+.bannerTwo form {
+  background-image: url("https://www.cockburnlibraries.com.au/wp-content/uploads/2021/05/Kokedama-trio-scaled.jpg");
+  padding: 150px 10px;
+  flex: 50%;
+  display: inline-block;
+  background-position: center;
 }
 
-.contactBanner{
+@media (max-width: 800px) {
+  .bannerTwo {
+    flex-direction: column;
+  }
+}
+
+.bannerTwo input {
+  background-color: darkolivegreen;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: none;
+  width: fit-content;
+  font-size: 20px;
+}
+
+.contactBanner {
   margin-top: 100px;
   text-align: center;
 }
@@ -1141,7 +1186,7 @@ textarea {
   display: grid;
   grid: auto / auto auto;
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-  grid-gap: 30px;
+  grid-gap: 0px;
   width: 100%;
 }
 
@@ -1152,27 +1197,25 @@ textarea {
 }
 
 .contactSet:nth-child(6) {
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
-.contactSet input[type = "submit"] {
+.contactSet input[type="submit"] {
+  letter-spacing: 10px;
   padding: 10px;
   height: 100%;
   width: 50%;
+  font-family: "Roboto";
+  font-weight: 500;
   cursor: pointer;
   text-transform: uppercase;
   line-height: 40px;
-  font-size: 24px;
-  border-radius: 45px;
-  transition: all 0.4s;
-  background: rgb(100, 122, 61);
+  font-size: 18px;
+  transition: all 0.2s;
+  background: rgb(120, 146, 76);
   color: whitesmoke;
-  box-shadow: 3px 3px 0 rgba(53, 53, 53, 0.8);
-}
-
-.contactSet input[type = "submit"]:hover {
-  border: 3px solid rgba(0, 0, 0, 1);
-  transition: all 0.4s;
+  border: 0.5px solid rgba(206, 206, 206, 0.3);
+  /* box-shadow: 3px 3px 0 rgba(53, 53, 53, 0.8); */
 }
 
 .setContent {
@@ -1187,22 +1230,15 @@ textarea {
   width: 90%;
   height: 100%;
   padding: 10px 0 10px 20px;
-  font-size: 24px;
-  border-radius: 50px;
-  border: 2px solid rgba(61, 61, 61, 0.8);
-  box-shadow: 3px 3px 0 rgba(61, 61, 61, 0.8);
-  background: rgba(100, 122, 61, 0.3);
+  font-size: 15px;
+  border: 0.5px solid rgba(206, 206, 206, 0.3);
+  /* border: 2px solid rgba(61, 61, 61, 0.8); */
+  /* box-shadow: 3px 3px 0 rgba(61, 61, 61, 0.8); */
+  background: rgba(206, 206, 206, 0.3);
+  resize: none;
+  font-family: "Roboto";
 }
 
-.setContent input:focus,
-.setContent textarea:focus {
-  border: 3px solid black;
-  transition: all 0.5s;
-}
-
-.setContent label {
-  line-height: 40px;
-  margin: 0 0 0 30px;
-  display: block;
-  font-size: larger;
+.setContent textarea::placeholder {
+  padding-top: 10px;
 }

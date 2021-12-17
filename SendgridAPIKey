@@ -1,0 +1,9 @@
+echo "export SENDGRID_API_KEY='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'" > sendgrid.env
+echo "sendgrid.env" >> .gitignore
+source ./sendgrid.env
+
+
+
+npm install --save @sendgrid/mail
+
+

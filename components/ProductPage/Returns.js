@@ -8,7 +8,7 @@ export default function Overview() {
         <Title>Returns</Title>
         <InfoContainer>
           <Column>
-            <Policy>
+            {/* <Policy>
               <Image src="https://i.ibb.co/MSLcCYK/75c1915a3fb3ad15c654f51be00fbf56.png" />
               <Info>
                 <Policy__Title>30 Days to Initiate a Return</Policy__Title>
@@ -41,17 +41,6 @@ export default function Overview() {
           </Column>
           <Column>
             <Policy>
-              <Image src="https://i.ibb.co/pW0pG0n/270af23b5f9913a35013f1d5f380e789.png" />
-              <Info>
-                <Policy__Title>Errors and Defects</Policy__Title>
-                <Details>
-                  If the return is a result of our error or defective product,
-                  we will refund the full cost of the merchandise and shipping
-                  charges.
-                </Details>
-              </Info>
-            </Policy>
-            <Policy>
               <Image src="https://i.ibb.co/tscmPCs/cfad5281d0b75c459b5e092524071842.png" />
               <Info>
                 <Policy__Title>Partial Refunds</Policy__Title>
@@ -60,15 +49,28 @@ export default function Overview() {
                   opened or used products.
                 </Details>
               </Info>
-            </Policy>
+            </Policy> */}
             <Policy>
               <Image src="https://i.ibb.co/c6TTJVg/1f95892e0b12fe1b4c1756cf80799cc2.png" />
               <Info>
                 <Policy__Title>Non-Returnable Items</Policy__Title>
                 <Details>
                   In accordance with federal and state guidelines and for the
-                  safety of our consumers, suppliers and carriers, some products
-                  are non-returnable and non-refundable.
+                  safety of our consumers, suppliers, and carriers, some products
+                  are non-returnable.
+                </Details>
+              </Info>
+            </Policy>
+          </Column>
+          <Column>
+            <Policy>
+              <Image src="https://i.ibb.co/pW0pG0n/270af23b5f9913a35013f1d5f380e789.png" />
+              <Info>
+                <Policy__Title>Errors and Defects</Policy__Title>
+                <Details>
+                  If the case of our error or of a defective product,
+                  we will refund the full cost of the merchandise and shipping
+                  charges.
                 </Details>
               </Info>
             </Policy>

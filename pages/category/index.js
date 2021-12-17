@@ -3,24 +3,38 @@ import PageLayout from "../../components/PageLayout";
 import styled from "styled-components";
 import Header from "../../components/Collection/Header";
 import MainSection from "../../components/Collection/MainSection";
+import { AllProducts } from "../../data/Category";
 
 export default function Collection() {
   const [sort, setSort] = useState("");
-  const [group, setGroup] = useState("Snake Plants");
-
+  const [group, setGroup] = useState("All Items");
+  const [data, setData] = useState(AllProducts);
   const urlq = {
-    SnakePlants: "Snake Plants",
-    MoneyPlants: "Money Plants",
-    OtherKokedamaPlants: "Other Kokedama Plants",
+    KokedamaPlants: "Kokedama Plants",
+    KokedamaStringGardens: "Kokedama String Gardens",
+    DecayedWoodPlantArrangements: "Decayed Wood Plant Arrangements",
+    Terrariums: "Terrariums",
+    PlantArt: "Plant Art",
+    DecorativePots: "Decorative Pots",
+    DecorativePlanters: "Decorative Planters",
+    PlantThemedPhotoFrames: "Plant Themed Photo Frames",
+    PlantThemedGreetingCards: "Plant Themed Greeting Cards",
+    PlantThemedHomeDecor: "Plant Themed Home Decor",
     AllItems: "All Items",
-    Etc: "Etc",
   };
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get("type");
     if (myParam) setGroup(urlq[myParam]);
   }, []);
-
+  useEffect(() => {
+    if (group === "All Items") {
+      setData(AllProducts);
+      return;
+    }
+    setData(AllProducts.filter((info) => info.category === group));
+  }, [group]);
+  console.log(data);
   return (
     <PageLayout>
       <Wrapper>
@@ -31,6 +45,7 @@ export default function Collection() {
             sort={sort}
             setGroup={setGroup}
             group={group}
+            data={data}
           />
         </Container>
       </Wrapper>
