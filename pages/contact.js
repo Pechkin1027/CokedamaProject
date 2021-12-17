@@ -19,37 +19,42 @@ export default function contact() {
           <h2>Contact Us</h2>
         </div>
       </div>
-      <div className="contactContent">
-        <div className="contactContainer">
-          <div className="contactSet">
-            <div className="setContent">
-              <input type="text" placeholder="First Name" />
+      <form action = "mailto:cokedamaplantscaping@gmail.com" method = "GET">
+        <div className="contactContent">
+          <div className="contactContainer">
+            <div className="contactSet">
+              <div className="setContent">
+                <input type="text" placeholder="First Name" />
+              </div>
             </div>
-          </div>
-          <div className="contactSet">
-            <div className="setContent">
-              <input type="text" placeholder="Last Name" />
+            <div className="contactSet">
+              <div className="setContent">
+                <input type="text" placeholder="Last Name" />
+              </div>
             </div>
-          </div>
-          <div className="contactSet">
-            <div className="setContent">
-              <input type="email" placeholder="Email Address" />
+            <div className="contactSet">
+              <div className="setContent">
+                <input type="email" placeholder="Email Address" />
+              </div>
             </div>
-          </div>
-          <div className="contactSet">
-            <div className="setContent">
-              <input type="text" placeholder="Phone Number" />
+            <div className="contactSet">
+              <div className="setContent">
+                <input type="text" placeholder="Phone Number" />
+              </div>
             </div>
-          </div>
-          <div className="contactSet">
-            <div className="setContent">
-              <textarea placeholder="Your Message"></textarea>
+            <div className="contactSet">
+              <div className="setContent">
+                <textarea placeholder="Your Message"></textarea>
+              </div>
             </div>
-          </div>
-          <div className="contactSet">
-            <input type="submit" value="Submit" />
+            <div className="contactSet">
+              <input type="submit" value="Submit" />
+            </div>
           </div>
         </div>
+      </form>
+      <div className= "slogan">
+        <h3>Grow a little love with a little plants.</h3>
       </div>
     </PageLayout>
   );
