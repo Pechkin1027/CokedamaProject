@@ -3,33 +3,22 @@ import PageLayout from "../components/PageLayout";
 import JumboSaleDisplay from "../components/Landing/JumboSaleDisplay";
 import styled from "styled-components";
 import ProductGrid from "../components/Landing/ProductGrid";
-import CategoryGrid from "../components/Landing/CategoryGrid";
-import { AllProducts } from "../data/Category";
+
 export default function home() {
-  let product1 = [
-    AllProducts[0],
-    AllProducts[3],
-    AllProducts[5],
-    AllProducts[8],
-    AllProducts[10],
-    AllProducts[16],
-  ];
   let category1 = [
     {
       name: "Kokedama Plants",
-      //description: "Sansevieria Zeylancia",
-      img: "https://www.succulentsurprise.com.au/images/products/large/ksg6xpx66i.jpg",
+      img:
+        "https://www.succulentsurprise.com.au/images/products/large/ksg6xpx66i.jpg",
       urlQuery: "KokedamaPlants",
     },
     {
       name: "Kokedama String Gardens",
-      //description: "Goldon Pothos",
       img: "https://i.ibb.co/0GCNfky/String-Garden.jpg",
       urlQuery: "KokedamaStringGardens",
     },
     {
       name: "Decayed Wood Plant Arrangements",
-      //description: "Aglaonema, Diffenbachia*, etc.",
       img: "https://i.ibb.co/NmV5RJs/Decayed.jpg",
       urlQuery: "DecayedWoodPlantArrangements",
     },
@@ -40,19 +29,15 @@ export default function home() {
     },
     {
       name: "Terrariums",
-      //description: "Potted Plants, Greeting Cards, and more",
       img: "https://i.ibb.co/zhmZcy7/Terarium.jpg",
       urlQuery: "Terrariums",
     },
     {
       name: "All Items",
-      //description: "All of our items",
       img: "https://i.ibb.co/SrDSvsd/Plants-01.jpg",
       urlQuery: "AllItems",
     },
   ];
-  let grid1 = [AllProducts[2], AllProducts[1], AllProducts[6]];
-  let grid2 = [AllProducts[5], AllProducts[4], AllProducts[3]];
   return (
     <PageLayout type={"HOME"}>
       <JumboSaleDisplay

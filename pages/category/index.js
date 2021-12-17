@@ -3,9 +3,8 @@ import PageLayout from "../../components/PageLayout";
 import styled from "styled-components";
 import Header from "../../components/Collection/Header";
 import MainSection from "../../components/Collection/MainSection";
-import { AllProducts } from "../../data/Category";
 
-export default function Collection() {
+export default function Collection({ AllProducts }) {
   const [sort, setSort] = useState("");
   const [group, setGroup] = useState("All Items");
   const [data, setData] = useState(AllProducts);
@@ -32,7 +31,7 @@ export default function Collection() {
       setData(AllProducts);
       return;
     }
-    setData(AllProducts.filter((info) => info.category === group));
+    setData(AllProducts?.filter((info) => info.category === group));
   }, [group]);
   console.log(data);
   return (
@@ -51,6 +50,12 @@ export default function Collection() {
       </Wrapper>
     </PageLayout>
   );
+}
+export async function getStaticProps() {
+  const res = await fetch("https://cokedama.lk/api/posts");
+  const data = await res.json();
+  console.log(data);
+  return { props: { AllProducts: data } };
 }
 const Wrapper = styled.div`
   width: 100%;

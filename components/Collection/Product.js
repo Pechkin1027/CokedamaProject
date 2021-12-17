@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { AiFillStar } from "react-icons/ai";
 import { FaShippingFast } from "react-icons/fa";
 
 export default function Product({ data }) {
-  const [image, setImage] = useState("");
-  const href = window.location.href;
-
+  console.log(data);
   return (
     <Wrapper href={"/category/" + data.id}>
       <Image src={data?.img[0]} />
