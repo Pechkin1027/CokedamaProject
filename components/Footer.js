@@ -7,13 +7,13 @@ const Footer = () => {
       <Container>
         <UpperHalf>
           <Col1>
-            <H2>Cokedama Plantscaping</H2>
+            {/* <H2>Cokedama Plantscaping</H2>
             <P>
               Our mission is to promote eco-friendly interior designing and
               inspire people to pursue careers working with plants while finding
               meaningful creative work to financially support them and their
               families.
-            </P>
+            </P> */}
           </Col1>
           <Col2>
             {/* <InnerDiv1>
