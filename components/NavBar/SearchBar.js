@@ -12,10 +12,8 @@ export default function SearchBar() {
 
   const onTyping = (value) => {
     setSearch(value);
-    console.log("theval", value);
     let newData = data.filter((item, index) => {
       if (value != "" && value != null && value != undefined) {
-        console.log(item.name, "val", value);
         return item.name.toLowerCase().includes(value.toLowerCase());
       }
     });

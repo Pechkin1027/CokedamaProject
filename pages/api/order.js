@@ -7,9 +7,7 @@ export default function handler(req, res) {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   var customer_data = Object.create(req.body.inputs);
-  console.log(customer_data);
   var customer_email = customer_data.email;
-  console.log(customer_email);
 
   const emailData = Object.create(req.body.Cart);
   var n = emailData.length;
@@ -53,17 +51,18 @@ export default function handler(req, res) {
     text: "Ruchira, your order of: " + message + " Has been completed.",
   };
   console.log(msg.text);
-  async () => {
-    try {
-      await sgMail.send(msg);
-    } catch (error) {
-      console.error(error);
+  // async () => {
+  //   try {
+  //     const Res = await sgMail.send(msg);
+  //     console.log(Res);
+  //   } catch (error) {
+  //     console.error(error);
 
-      if (error.response) {
-        console.error(error.response.body);
-      }
-    }
-  };
+  //     if (error.response) {
+  //       console.error(error.response.body);
+  //     }
+  //   }
+  // };
   sgMail
     .send(msg)
     .then(() => {

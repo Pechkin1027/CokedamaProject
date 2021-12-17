@@ -16,22 +16,17 @@ export default function Navbar() {
   useEffect(function onFirstMount() {
     function onScroll(text) {
       let innerWidth = text.srcElement.window.innerWidth;
-      console.log("th ", text.srcElement.window.innerWidth, isTablet);
       if (innerWidth < 970 && isTablet === false) {
         setIsTablet(true);
-        console.log("trueo");
       }
       if (innerWidth > 970 && isTablet === true) {
         setIsTablet(false);
-        console.log("falso");
       }
       if (innerWidth < 540 && !isMobile) {
         setIsMobile(true);
-        console.log("trueo");
       }
       if (innerWidth > 540 && isMobile) {
         setIsMobile(false);
-        console.log("falso");
       }
     }
 
@@ -48,7 +43,6 @@ export default function Navbar() {
 
   const onOpenMenu = () => {
     setOpenMenu(true);
-    console.log("open", openMenu);
   };
 
   const closeMenu = () => {

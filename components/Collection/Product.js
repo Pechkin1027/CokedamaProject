@@ -4,7 +4,6 @@ import { AiFillStar } from "react-icons/ai";
 import { FaShippingFast } from "react-icons/fa";
 
 export default function Product({ data }) {
-  console.log(data);
   return (
     <Wrapper href={"/category/" + data.id}>
       <Image src={data?.img[0]} />
