@@ -4,9 +4,9 @@ const handler = async (_, res) => {
   try {
     const results = await sql_query(`
         SELECT * FROM products
-            ORDER BY id
+          ORDER BY id
     `);
-    const data = res.json(results);
+    const data = await res.json(results);
     const newData = data.map((info) => {
       const img = [];
       for (let i = 0; i < 5; i++) {
