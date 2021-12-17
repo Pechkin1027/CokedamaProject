@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <Wrapper>
       <Container>
-        <UpperHalf>
           <div className="slogan">
             <h3>Grow a little love with little plants.</h3>
           </div>
@@ -32,7 +31,6 @@ const Footer = () => {
               <H1>+94 71 412 0033</H1>
             </InnerDiv1> 
           </Col2> */}
-        </UpperHalf>
       </Container>
     </Wrapper>
   );
