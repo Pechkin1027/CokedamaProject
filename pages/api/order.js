@@ -7,7 +7,21 @@ export default function handler(req, res) {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   var customer_data = Object.create(req.body.inputs);
+  console.log(req.body);
+  console.log(customer_data);
+
+  var customer_name = customer_data.first_name;
+  console.log(customer_name);
+  var customer_lastName = customer_data.last_name;
+  console.log(customer_lastName);
   var customer_email = customer_data.email;
+  console.log(customer_email);
+  var customer_address = customer_data.address;
+  console.log(customer_address);
+  var customer_zip = customer_data.zip;
+  console.log(customer_zip);
+  var customer_city = customer_data.city;
+  console.log(customer_city);
 
   const emailData = Object.create(req.body.Cart);
   var n = emailData.length;
@@ -45,10 +59,29 @@ export default function handler(req, res) {
   }
 
   const msg = {
-    to: customer_email,
+    to: "cokedamainterio@gmail.com",
     from: "mbarnes2k5@gmail.com", // Use the email address or domain you verified above
-    subject: "Cokedama Order Received",
-    text: "Ruchira, your order of: " + message + " Has been completed.",
+    subject: "Cokedama Order Up",
+    text:
+      "Ruchira, your customer has ordered : " +
+      message +
+      "\nPlease observe the customers information and fulfil the order : \n" +
+      "Name : " +
+      customer_name +
+      " " +
+      customer_lastName +
+      "\n" +
+      "Address : " +
+      customer_address +
+      "\n" +
+      "Zip Code :" +
+      customer_zip +
+      "\n" +
+      "City : " +
+      customer_city +
+      "\n" +
+      "Email : " +
+      customer_email,
   };
 
   console.log(msg.text);
