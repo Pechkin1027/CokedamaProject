@@ -51,7 +51,7 @@ export default function Collection({ AllProducts }) {
     </PageLayout>
   );
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch("https://cokedama.lk/api/posts");
   const data = await res.json();
   const AllProducts = data?.map((info) => {

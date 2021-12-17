@@ -24,16 +24,16 @@ export default function ProductPage({ data = {} }) {
     </PageLayout>
   );
 }
-export async function getStaticPaths() {
-  const res = await fetch("https://cokedama.lk/api/posts");
-  const data = await res.json();
-  const paths = data?.map((info) => ({
-    params: { pid: info.id + "" },
-  }));
-  return { paths, fallback: false };
-}
+// export async function getStaticPaths() {
+//   const res = await fetch("https://cokedama.lk/api/posts");
+//   const data = await res.json();
+//   const paths = data?.map((info) => ({
+//     params: { pid: info.id + "" },
+//   }));
+//   return { paths, fallback: false };
+// }
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const res = await fetch("https://cokedama.lk/api/posts");
   const data = await res.json();
   const AllProducts = data?.map((info) => {
