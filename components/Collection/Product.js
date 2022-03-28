@@ -10,6 +10,7 @@ export default function Product({ data }) {
       <Container>
         <InnerContainer>
           <Tag>Featured</Tag>
+          <Title>{data.name}</Title>
           <Price>Rs {data.price}</Price>
           <Ratings>
             <AiFillStar color={data.rating > 0 ? "#f39019" : "#bfbfbf"} />
@@ -18,7 +19,6 @@ export default function Product({ data }) {
             <AiFillStar color={data.rating > 3 ? "#f39019" : "#bfbfbf"} />
             <AiFillStar color={data.rating > 4 ? "#f39019" : "#bfbfbf"} />
           </Ratings>
-          <Title>{data.name}</Title>
           <Shipping>
             <FaShippingFast />
             <ShipText>Free Shipping</ShipText>
@@ -104,7 +104,7 @@ const Title = styled.h2`
   color: #545658;
   padding: 4px 0;
   line-height: 20px;
-  font-size: 12px;
+  font-size: 16px;
   max-width: 200px;
   @media ${(props) => props.theme.tablet} {
     max-width: 100%;
