@@ -27,6 +27,16 @@ export default function MainSection({ data, sort, setGroup, group }) {
         return item.price > 2000;
       });
     }
+    if (sort === "Newest Arrival") {
+      newArr = await newArr.sort((a, b) => {
+        return b.id - a.id;
+      });
+    }
+    if (sort === "Top Rated") {
+      newArr = await newArr.sort((a, b) => {
+        return b.rating - a.rating;
+      });
+    }
     if (sort === "Price Low - High") {
       newArr = await newArr.sort((a, b) => {
         return a.price - b.price;
