@@ -27,8 +27,9 @@ export default function Header(props) {
             value={value}
             onChange={(event) => onChange(event.target.value)}
           >
-            <Option>Select</Option>
-
+            <Option>Featured</Option>
+            <Option>Newest Arrival</Option>
+            <Option>Top Rated</Option>
             <Option>Price Low - High</Option>
             <Option>Price High - Low</Option>
           </Select>
@@ -74,7 +75,6 @@ const Subtitle = styled.p`
 const Select = styled.select`
   font-size: 14px;
   height: 34px;
-
   color: #2f3337;
   line-height: 1;
   min-width: 150px;
@@ -82,7 +82,6 @@ const Select = styled.select`
   text-align: left;
   padding: 0 16px;
   border-radius: 4px;
-
   border: 1px solid #dadcdf;
   display: flex;
   align-items: center;
@@ -93,14 +92,12 @@ const Select = styled.select`
 const Option = styled.option`
   font-size: 14px;
   height: 34px;
-
   color: #2f3337;
   line-height: 1;
   /* min-width: 150px; */
   position: relative;
   text-align: left;
   padding: 0 16px;
-
   border: 1px solid #dadcdf;
   display: flex;
   align-items: center;
