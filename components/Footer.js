@@ -5,10 +5,54 @@ const Footer = () => {
   return (
     <Wrapper>
       <Container>
-          <div className="slogan">
+      <div class="flex-container">
+  <div className="flex-item-left">About Us
+  <div className="flex-item-left"><img src="Cokedama-logos_transparent.png" width="150px" height="150px"></img></div>
+  <div className="flex-item-left2">Grow a little love with little plants.</div>
+  </div>
+  <div className="flex-item-middle">Useful Links
+  
+  <div className="flex-item-middle2">
+  <a target="_blank" href="/category">
+           Our Shop 
+           </a>
+  </div>
+  <div className="flex-item-middle2">
+  <a target="_blank" href="/about">
+           About Us 
+           </a>
+  </div>
+  </div>
+  <div className="flex-item-right">Contact Us
+  <div className="flex-item-right2">
+    
+  <a target="_blank" href="https://www.facebook.com/cokedamainteriorplantscaping/">
+           <img src="facelogo.png" width="50px" height="50px"></img> 
+           </a>
+<br></br>
+<br></br>
+    <a target="_blank" href="https://www.whatsapp.com/">
+           <img src="whatsapp.png" width="50px" height="50px"></img> 
+           </a>
+           
+           <p>+94 71 412 0033</p>
+  </div>
+  </div>
+</div>
+<div className="copyright">Copyright 2021 © Cokedama. All rights reserved.</div>
+
+
+
+
+
+          {/*<div className="slogan">
+            <div className="footerLeft">ABOUT COMPANY</div>
+            <div className="footerMiddle"> Hello My name is!</div>
             <h3>Grow a little love with little plants.</h3>
             <div className="copyright">Copyright 2021 © Cokedama. All rights reserved.</div>
+            
           </div>
+  */}
           {/* <Col1>
             <H2>Cokedama Plantscaping</H2>
             <P>
