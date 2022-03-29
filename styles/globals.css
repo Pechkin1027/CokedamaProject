@@ -211,23 +211,30 @@ html {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
-a:focus {
-  outline: thin dotted;
+a:link {
+  color:rgba(0,0,0,0.55)
 }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 
-a:active,
+
 a:hover {
-  outline: 0;
+  color:#708238
 }
+
+a:visited{
+  color:rgba(0, 0, 0, 0.55)
+}
+
 
 /**
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
+
+
 
 img {
   border: 0; /* 1 */
@@ -1276,12 +1283,15 @@ desktop: "(min-width: 2562px)", */
   width: auto;
   background-color: rgb(68, 68, 68);
   color: rgb(245, 236, 236);
-  text-align: center;
+  text-align: left;
   padding: 100px;
   font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 5px;
+  line-height: 1.6;
+  padding-left:30px;
+  padding-top:50px;
 }
 .copyright {
   font-size: 12px;
@@ -1289,6 +1299,88 @@ desktop: "(min-width: 2562px)", */
   padding: 10px;
   margin-bottom: 16px;
   margin-top: 16px;
+  text-align: center;
+}
+.footerLeft {
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 10px;
+  text-align:left;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  text-decoration: underline;
+  
+}
+.footerMiddle {
+  font-size: 12px;
+  font-weight: lighter;
+  padding-top: 0px;
+  text-align:center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  text-decoration: underline;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding:0px;
+  line-height: 1.5;
+}
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  text-align: center;
+  padding-top:50px;
+  line-height: 1.5;
+}
+.flex-item-left {
+  
+  padding: 10px;
+  flex: 33%;
+}
+.flex-item-left2 {
+  
+  padding: 10px;
+  flex: 33%;
+  font-weight: lighter;
+}
+.flex-item-right {
+  
+  padding: 10px;
+  flex: 33%;
+}
+.flex-item-right2 {
+  
+  padding: 10px;
+  flex: 33%;
+  font-weight: lighter;
+}
+.flex-item-middle {
+  
+  padding: 10px;
+  flex: 33%;
+}
+.flex-item-middle2 {
+  
+  padding: 10px;
+  flex: 33%;
+  font-weight: lighter;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 /*Our goal image*/
