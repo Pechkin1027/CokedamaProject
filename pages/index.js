@@ -7,6 +7,11 @@ import ProductGrid from "../components/Landing/ProductGrid";
 export default function home() {
   let category1 = [
     {
+      name: "All Items",
+      img: "https://i.ibb.co/SrDSvsd/Plants-01.jpg",
+      urlQuery: "AllItems",
+    },
+    {
       name: "Kokedama Plants",
       img:
         "https://www.succulentsurprise.com.au/images/products/large/ksg6xpx66i.jpg",
@@ -31,11 +36,6 @@ export default function home() {
       name: "Terrariums",
       img: "https://i.ibb.co/zhmZcy7/Terarium.jpg",
       urlQuery: "Terrariums",
-    },
-    {
-      name: "All Items",
-      img: "https://i.ibb.co/SrDSvsd/Plants-01.jpg",
-      urlQuery: "AllItems",
     },
   ];
   return (
