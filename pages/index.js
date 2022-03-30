@@ -3,6 +3,13 @@ import PageLayout from "../components/PageLayout";
 import JumboSaleDisplay from "../components/Landing/JumboSaleDisplay";
 import styled from "styled-components";
 import ProductGrid from "../components/Landing/ProductGrid";
+import Image from "next/image";
+
+const mystyle = {
+  paddingTop: "82px",
+
+  
+};
 
 export default function home() {
   let category1 = [
@@ -40,11 +47,24 @@ export default function home() {
   ];
   return (
     <PageLayout type={"HOME"}>
-      <JumboSaleDisplay
-        url="/category"
-        img="https://i.ibb.co/SdwwgF3/shutterstock-1848217732.png"
-        First
-      />
+    
+    
+    <img style={mystyle} src="shutterstock-1848217732.png"></img>
+    
+    
+    
+    
+    {/*
+      <div>
+        <Image
+  width={1700}
+  height={400}
+  src="/shutterstock-1848217732.png"
+  objectFit="cover"
+  layout=""
+/>
+  </div>*/}
+
       <div className="bannerOne">
         <div className="oneText">
           <h2>Our Vision</h2>
