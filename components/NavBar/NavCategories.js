@@ -3,16 +3,16 @@ import Styled from "styled-components";
 
 export default function NavCategories(props) {
   let categories = [
+    { name: "All Items" },
+    { name: "Decayed Wood Plant Arrangements" },
+    { name: "Decorative Planters" },
+    { name: "Decorative Pots" },
     { name: "Kokedama Plants" },
     { name: "Kokedama String Gardens" },
-    { name: "Decayed Wood Plant Arrangements" },
-    { name: "All Items" },
-    { name: "Terrariums" },
     { name: "Plant Art" },
-    { name: "Decorative Pots" },
-    { name: "Decorative Planters" },
-    { name: "Plant Themed Photo Frames" },
     { name: "Plant Themed Home Decor" },
+    { name: "Plant Themed Photo Frames" },
+    { name: "Terrariums" },
   ];
   return (
     <Wrapper>
