@@ -10,16 +10,16 @@ export default function SideMenu(props) {
           <Logo src="/ShopflowWhite.svg" />
         </LogoRow>
         <TitleRow>Categories</TitleRow>
+         <MenuItem name="All Items" href="/category?type=AllItems" />
+        <MenuItem name="Decayed Wood Plant Arrangements" href="/category?type=DecayedWoodPlantArrangements" />
+        <MenuItem name="Decorative Planters" href="/category?type=DecorativePlanters" />
+        <MenuItem name="Decorative Pots" href="/category?type=DecorativePots" />
         <MenuItem name="Kokedama Plants" href="/category?type=KokedamaPlants" />
         <MenuItem name="Kokedama String Gardens" href="/category?type=KokedamaStringGardens" />
-        <MenuItem name="Decayed Wood Plant Arrangements" href="/category?type=DecayedWoodPlantArrangements" />
-        <MenuItem name="All Items" href="/category?type=AllItems" />
-        <MenuItem name="Terrariums" href="/category?type=Terrariums" />
         <MenuItem name="Plant Art" href="/category?type=PlantArt" />
-        <MenuItem name="Decorative Pots" href="/category?type=DecorativePots" />
-        <MenuItem name="Decorative Planters" href="/category?type=DecorativePlanters" />
-        <MenuItem name="Plant Themed Photo Frames" href="/category?type=PlantThemedPhotoFrames" />
         <MenuItem name="Plant Themed Home Decor" href="/category?type=PlantThemedHomeDecor" />
+        <MenuItem name="Plant Themed Photo Frames" href="/category?type=PlantThemedPhotoFrames" />
+        <MenuItem name="Terrariums" href="/category?type=Terrariums" />
       </MenuContainer>
       <Overlay open={props.isOpen} onClick={() => props.onClose()} />
       {props.isOpen && (
