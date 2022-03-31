@@ -9,17 +9,17 @@ export default function Collection({ AllProducts }) {
   const [group, setGroup] = useState("All Items");
   const [data, setData] = useState(AllProducts);
   const urlq = {
+    AllItems: "All Items",
+    DecayedWoodPlantArrangements: "Decayed Wood Plant Arrangements",
+    DecorativePlanters: "Decorative Planters",
+    DecorativePots: "Decorative Pots",
     KokedamaPlants: "Kokedama Plants",
     KokedamaStringGardens: "Kokedama String Gardens",
-    DecayedWoodPlantArrangements: "Decayed Wood Plant Arrangements",
-    Terrariums: "Terrariums",
     PlantArt: "Plant Art",
-    DecorativePots: "Decorative Pots",
-    DecorativePlanters: "Decorative Planters",
-    PlantThemedPhotoFrames: "Plant Themed Photo Frames",
     PlantThemedGreetingCards: "Plant Themed Greeting Cards",
     PlantThemedHomeDecor: "Plant Themed Home Decor",
-    AllItems: "All Items",
+    PlantThemedPhotoFrames: "Plant Themed Photo Frames",
+    Terrariums: "Terrariums",
   };
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
