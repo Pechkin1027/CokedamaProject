@@ -214,7 +214,7 @@ html {
  */
 
 a:link {
-  color:rgba(0,0,0,0.55)
+  color:rgba(0, 0, 0, 0.55)
   
 }
 
@@ -1382,6 +1382,7 @@ desktop: "(min-width: 2562px)", */
   padding: 10px;
   flex: 33%;
   font-weight: lighter;
+  color: #fff;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -1413,4 +1414,7 @@ desktop: "(min-width: 2562px)", */
   margin-top: 20px;
   font-size: 35px;
   margin-bottom: 20px;
+}
+a.flex-item-middle2{
+  color: rgb(255, 255, 255);
 }
