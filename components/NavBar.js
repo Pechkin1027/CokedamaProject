@@ -6,6 +6,8 @@ import NavOption from "./NavBar/NavOption";
 import SideMenu from "./NavBar/SideMenu";
 import Link from "next/link";
 
+
+
 export default function Navbar() {
   const [windowDimension, setWindowDimension] = useState(null);
   const [isOpen, setOpen] = useState(false);
@@ -149,7 +151,7 @@ const SideLinks = styled.div`
   display: flex;
   margin-top: 5px;
   a {
-    padding-right: 0.5rem;
+    padding-right: -0.5rem;
     padding-left: 0.5rem;
     margin-right: 16px;
   }

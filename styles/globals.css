@@ -205,7 +205,9 @@ html {
   font-size: 100%; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
+  
 }
+
 
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
@@ -213,6 +215,7 @@ html {
 
 a:link {
   color:rgba(0,0,0,0.55)
+  
 }
 
 /**
@@ -505,11 +508,15 @@ textarea {
   .image-gallery-fullscreen-button,
   .image-gallery-play-button {
     padding: 10px;
+    font-size-adjust: ch-width;
   }
   .image-gallery-fullscreen-button .image-gallery-svg,
   .image-gallery-play-button .image-gallery-svg {
     height: 16px;
     width: 16px;
+  }
+  html{
+    font-size: 60%;
   }
 }
 
@@ -538,6 +545,7 @@ textarea {
     height: 72px;
     width: 36px;
   }
+  
 }
 @media (max-width: 480px) {
   .image-gallery-left-nav .image-gallery-svg,
