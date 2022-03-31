@@ -13,16 +13,16 @@ export default function FilterSection({
 }) {
   let prices = ["Under Rs 1500", "Rs 1500 - Rs 2000", "Over Rs 2000"];
   let categories = [
+    "All Items",
+    "Decayed Wood Plant Arrangements",
+    "Decorative Planters",
+    "Decorative Pots",
     "Kokedama Plants",
     "Kokedama String Gardens",
-    "Decayed Wood Plant Arrangements",
-    "All Items",
-    "Terrariums",
     "Plant Art",
-    "Decorative Pots",
-    "Decorative Planters",
+    "Plant Themed Home Decor",
     "Plant Themed Photo Frames",
-    "Plant Themed Home Decor"
+    "Terrariums"
   ];
 
   return (
