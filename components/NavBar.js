@@ -68,6 +68,9 @@ export default function Navbar() {
             <Link href="/about" passHref>
               <LogoTag>About Us</LogoTag>
             </Link>
+            <Link href="/story" passHref>
+              <LogoTag>Our Story</LogoTag>
+            </Link>
             <Link href="/category" passHref>
               <LogoTag>Categories</LogoTag>
             </Link>
