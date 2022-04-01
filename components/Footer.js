@@ -13,12 +13,12 @@ const Footer = () => {
   <div className="flex-item-middle">Useful Links
   
   <div className="flex-item-middle2">
-  <a target="_blank" href="/category">
+  <a target="_blank" href="/category"class ="flex-item-middle2">
            Our Shop 
            </a>
   </div>
   <div className="flex-item-middle2">
-  <a target="_blank" href="/about">
+  <a target="_blank" href="/about"class ="flex-item-middle2">
            About Us 
            </a>
   </div>

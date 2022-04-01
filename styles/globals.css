@@ -505,11 +505,15 @@ textarea {
   .image-gallery-fullscreen-button,
   .image-gallery-play-button {
     padding: 10px;
+    font-size-adjust: ch-width;
   }
   .image-gallery-fullscreen-button .image-gallery-svg,
   .image-gallery-play-button .image-gallery-svg {
     height: 16px;
     width: 16px;
+  }
+  html{
+    font-size: 60%;
   }
 }
 
@@ -1448,3 +1452,6 @@ desktop: "(min-width: 2562px)", */
   position: relative;
   top: 0px;
 }
+a.flex-item-middle2{
+  color: rgb(255, 255, 255);
+} 
