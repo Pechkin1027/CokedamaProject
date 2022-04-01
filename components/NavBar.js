@@ -152,7 +152,7 @@ const SideLinks = styled.div`
   display: flex;
   margin-top: 5px;
   a {
-    padding-right: 0.5rem;
+    padding-right: -0.5rem;
     padding-left: 0.5rem;
     margin-right: 16px;
   }
@@ -199,6 +199,7 @@ const Options = styled.div`
   transition: transform 0.15s ease-in-out;
   box-sizing: border-box;
   position: relative;
+  flex-direction: row-reverse;
 `;
 
 const MenuIcon = styled.a`
