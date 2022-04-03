@@ -70,6 +70,9 @@ export default function Navbar() {
             <Link href="/about" passHref>
               <LogoTag>About Us</LogoTag>
             </Link>
+            <Link href="/story" passHref>
+              <LogoTag>Our Story</LogoTag>
+            </Link>
             <Link href="/category" passHref>
               <LogoTag>Categories</LogoTag>
             </Link>
@@ -198,6 +201,7 @@ const Options = styled.div`
   transition: transform 0.15s ease-in-out;
   box-sizing: border-box;
   position: relative;
+  flex-direction: row-reverse;
 `;
 
 const MenuIcon = styled.a`

@@ -37,12 +37,12 @@ export default function about() {
         </div>
       </div>
       
-      <div className="aboutStory">
+      <div className="aboutGoal">
         <img src="https://www.cockburnlibraries.com.au/wp-content/uploads/2021/05/Kokedama-trio-scaled.jpg" width="45%" />
-        <div className="storyHeader">
+        <div className="goalHeader">
           <h2>Our Goal</h2>
         </div>
-        <div className="storyContent">
+        <div className="goalContent">
           <p>
           To promote eco-friendly interior designing and inspire people to
             pursue careers working with plants while finding meaningful creative

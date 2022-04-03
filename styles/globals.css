@@ -1202,6 +1202,11 @@ desktop: "(min-width: 2562px)", */
   padding-bottom: 10px;
 }
 
+.messageUs {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contactContent {
   /* justify-content: center; */
   position: relative;
@@ -1247,6 +1252,7 @@ desktop: "(min-width: 2562px)", */
 
 /* Contact info */
 .contactInfo {
+  text-align: center;
   padding: 10px;
   font-size: 18px;
   font-family: "Roboto";
@@ -1260,6 +1266,11 @@ desktop: "(min-width: 2562px)", */
   line-height: 60px;
   letter-spacing: 5px;
   padding-bottom: 10px;
+}
+
+.contactInfo {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .setContent {
@@ -1415,6 +1426,41 @@ desktop: "(min-width: 2562px)", */
   font-size: 35px;
   margin-bottom: 20px;
 }
+
+.aboutGoal {
+  /* background-color: rgb(210, 218, 190); */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Roboto";
+}
+
+.aboutGoal h2 {
+  /* background-color: lightgreen; */
+  font-weight: bold;
+  font-size: 35px;
+  padding: 10px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.aboutGoal p {
+  padding: 10px;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.aboutGoal img {
+  float: right;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+}
+a.flex-item-middle2{
+  color: rgb(255, 255, 255);
+} 
+
 a.flex-item-middle2{
   color: rgb(255, 255, 255);
 }

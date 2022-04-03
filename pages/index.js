@@ -5,12 +5,15 @@ import styled from "styled-components";
 import ProductGrid from "../components/Landing/ProductGrid";
 import Image from "next/image";
 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 const mystyle = {
   paddingTop: "82px",
 
   
 };
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
 export default function home() {
   let category1 = [
