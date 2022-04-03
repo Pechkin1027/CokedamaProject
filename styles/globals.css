@@ -205,14 +205,17 @@ html {
   font-size: 100%; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
+  
 }
+
 
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
 a:link {
-  color:rgba(0,0,0,0.55)
+  color:rgba(0, 0, 0, 0.55)
+  
 }
 
 /**
@@ -542,6 +545,7 @@ textarea {
     height: 72px;
     width: 36px;
   }
+  
 }
 @media (max-width: 480px) {
   .image-gallery-left-nav .image-gallery-svg,
@@ -1389,6 +1393,7 @@ desktop: "(min-width: 2562px)", */
   padding: 10px;
   flex: 33%;
   font-weight: lighter;
+  color: #fff;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -1455,3 +1460,7 @@ desktop: "(min-width: 2562px)", */
 a.flex-item-middle2{
   color: rgb(255, 255, 255);
 } 
+
+a.flex-item-middle2{
+  color: rgb(255, 255, 255);
+}

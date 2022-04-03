@@ -6,6 +6,8 @@ import NavOption from "./NavBar/NavOption";
 import SideMenu from "./NavBar/SideMenu";
 import Link from "next/link";
 
+
+
 export default function Navbar() {
   const [windowDimension, setWindowDimension] = useState(null);
   const [isOpen, setOpen] = useState(false);
