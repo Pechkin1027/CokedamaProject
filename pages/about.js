@@ -1,5 +1,7 @@
 import React from "react";
 import PageLayout from "../components/PageLayout";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 export default function about() {
   return (
@@ -52,6 +54,67 @@ export default function about() {
       </div>
 
       <div className="vision-section">
+         <h2>Our Company's Mission</h2>
+           <Carousel>
+             <div>
+               <img src={"Awareness.png"}/>
+               <h2>Awareness</h2>
+               <p className="vision-box">Create a favorable perception of interior plantscaping and
+              increase awareness of careers working with plants.</p>
+  
+             </div>
+             <div>
+             <img src="Education.png"/>
+              <h2>Education</h2>
+              <p className="vision-box">Engage and excite students and professionals in interior design
+              fields about horticulture.</p>
+  
+  
+             </div>
+             <div>
+             <img src="Empower.png"/>
+             <h2>Empowerment</h2>
+               <p className="vision-box">Empower creative moms by creating and popularizing business
+              opportunities.</p>
+  
+  
+             </div>
+             <div>
+             <img src="Partnership.png"/>
+             <h2>Partnerships</h2>
+               <p className="vision-box">Cultivate and strengthen partnerships and collaborations, while
+              diversifying and broadening the base of advocates and supporters.</p>
+  
+  
+             </div>
+             <div>
+             <img src="Eco Friendly.png"/>
+             <h2>Eco-friendly</h2>
+               <p className="vision-box">Popularize eco-friendly concepts in the interior design field by
+              advocating the use of recycled materials.</p>
+  
+   
+             </div>
+             <div>
+             <img src="Resource Dev.png"/>
+             <h2>Resource Development</h2>
+               <p className="vision-box">Create educational resources such as plant databases, valuable
+              tips, and guides for the community. </p>
+  
+   
+             </div>
+             <div>
+             <img src="Workforce.png"/>
+             <h2>Workforce Developement</h2>
+               <p className="vision-box">Increase the skilled workforce in plantscaping and develop a
+              strong pipeline of future talent.</p>
+  
+   
+             </div>
+           </Carousel>
+         </div>
+
+      {/* <div className="vision-section">
         <h2>Our Company's Mission</h2>
         <div className="boxes">
           <div className="vision-box">
@@ -111,7 +174,7 @@ export default function about() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       {/* <div className="aboutStory">
