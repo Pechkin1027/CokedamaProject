@@ -1,7 +1,7 @@
 import React from "react";
 import PageLayout from "../components/PageLayout";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 
 export default function about() {
   return (
@@ -16,7 +16,7 @@ export default function about() {
       </div>
       <div className="aboutBanner">
         <div className="bannerContent">
-          <img src="Floaters.jpg" width="50%" />
+          <img src="Floaters.jpg"  />
           <div className="bannerText">
             <h1>What is Kokedama?</h1>
             <p>
@@ -38,81 +38,85 @@ export default function about() {
           </div>
         </div>
       </div>
-      
-      <div className="aboutGoal">
-        <img src="https://www.cockburnlibraries.com.au/wp-content/uploads/2021/05/Kokedama-trio-scaled.jpg" width="45%" />
-        <div className="goalHeader">
-          <h2>Our Goal</h2>
-        </div>
-        <div className="goalContent">
+
+      <div className="aboutBanner">
+      <div className="bannerContent">
+        <img
+          src="https://www.cockburnlibraries.com.au/wp-content/uploads/2021/05/Kokedama-trio-scaled.jpg"
+          width="45%"
+        />
+        <div className="bannerText">
+          <h1>Our Goal</h1>
           <p>
-          To promote eco-friendly interior designing and inspire people to
+            To promote eco-friendly interior designing and inspire people to
             pursue careers working with plants while finding meaningful creative
             work to financially support them and their families.
           </p>
         </div>
       </div>
+      </div>
 
       <div className="vision-section">
-         <h2>Our Company's Mission</h2>
-           <Carousel>
-             <div>
-               <img src={"Awareness.png"}/>
-               <h2>Awareness</h2>
-               <p className="vision-box">Create a favorable perception of interior plantscaping and
-              increase awareness of careers working with plants.</p>
-  
-             </div>
-             <div>
-             <img src="Education.png"/>
-              <h2>Education</h2>
-              <p className="vision-box">Engage and excite students and professionals in interior design
-              fields about horticulture.</p>
-  
-  
-             </div>
-             <div>
-             <img src="Empower.png"/>
-             <h2>Empowerment</h2>
-               <p className="vision-box">Empower creative moms by creating and popularizing business
-              opportunities.</p>
-  
-  
-             </div>
-             <div>
-             <img src="Partnership.png"/>
-             <h2>Partnerships</h2>
-               <p className="vision-box">Cultivate and strengthen partnerships and collaborations, while
-              diversifying and broadening the base of advocates and supporters.</p>
-  
-  
-             </div>
-             <div>
-             <img src="Eco Friendly.png"/>
-             <h2>Eco-friendly</h2>
-               <p className="vision-box">Popularize eco-friendly concepts in the interior design field by
-              advocating the use of recycled materials.</p>
-  
-   
-             </div>
-             <div>
-             <img src="Resource Dev.png"/>
-             <h2>Resource Development</h2>
-               <p className="vision-box">Create educational resources such as plant databases, valuable
-              tips, and guides for the community. </p>
-  
-   
-             </div>
-             <div>
-             <img src="Workforce.png"/>
-             <h2>Workforce Developement</h2>
-               <p className="vision-box">Increase the skilled workforce in plantscaping and develop a
-              strong pipeline of future talent.</p>
-  
-   
-             </div>
-           </Carousel>
-         </div>
+        <h2>Our Company's Mission</h2>
+        <Carousel>
+          <div>
+            <img src={"Awareness.png"} />
+            <h2>Awareness</h2>
+            <p className="vision-box">
+              Create a favorable perception of interior plantscaping and
+              increase awareness of careers working with plants.
+            </p>
+          </div>
+          <div>
+            <img src="Education.png" />
+            <h2>Education</h2>
+            <p className="vision-box">
+              Engage and excite students and professionals in interior design
+              fields about horticulture.
+            </p>
+          </div>
+          <div>
+            <img src="Empower.png" />
+            <h2>Empowerment</h2>
+            <p className="vision-box">
+              Empower creative moms by creating and popularizing business
+              opportunities.
+            </p>
+          </div>
+          <div>
+            <img src="Partnership.png" />
+            <h2>Partnerships</h2>
+            <p className="vision-box">
+              Cultivate and strengthen partnerships and collaborations, while
+              diversifying and broadening the base of advocates and supporters.
+            </p>
+          </div>
+          <div>
+            <img src="Eco Friendly.png" />
+            <h2>Eco-friendly</h2>
+            <p className="vision-box">
+              Popularize eco-friendly concepts in the interior design field by
+              advocating the use of recycled materials.
+            </p>
+          </div>
+          <div>
+            <img src="Resource Dev.png" />
+            <h2>Resource Development</h2>
+            <p className="vision-box">
+              Create educational resources such as plant databases, valuable
+              tips, and guides for the community.{" "}
+            </p>
+          </div>
+          <div>
+            <img src="Workforce.png" />
+            <h2>Workforce Developement</h2>
+            <p className="vision-box">
+              Increase the skilled workforce in plantscaping and develop a
+              strong pipeline of future talent.
+            </p>
+          </div>
+        </Carousel>
+      </div>
 
       {/* <div className="vision-section">
         <h2>Our Company's Mission</h2>
@@ -175,7 +179,6 @@ export default function about() {
           </div>
         </div>
       </div> */}
-
 
       {/* <div className="aboutStory">
         <img src="About_Kokedama_Plant.jpg" width="45%" />
