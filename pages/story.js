@@ -12,12 +12,9 @@ export default function about() {
           <h2>COKEDAMA'S STORY</h2>
         </div>
       </div>
-        <div className="aboutStory">
-        <img src="About_Kokedama_Plant.jpg" width="45%" />
-        <div className="storyHeader">
+      <div className="aboutStory">
+        <div>
           <h2>Our Story</h2>
-        </div>
-        <div className="storyContent">
           <p>
             There’s a blessing behind every challenge, a door of opportunity for
             each window that closes, a rainbow after the rain. During one of the
@@ -84,6 +81,7 @@ export default function about() {
             blessings in disguise. I hope my story inspires you too.
           </p>
         </div>
+        <img src="About_Kokedama_Plant.jpg" width="45%" />
       </div>
     </PageLayout>
   );
