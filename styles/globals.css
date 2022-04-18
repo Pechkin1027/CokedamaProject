@@ -879,8 +879,6 @@ textarea {
   margin-bottom: 20px;
 }
 .vision-section p {
-  width: 70%;
-  text-align: center;
 }
 .boxes {
   display: flex;
@@ -902,27 +900,27 @@ desktop: "(min-width: 2562px)", */
 .vision-box {
   text-align: center;
   width: 100%;
-  padding: 30px;
+  /*padding: 30px;*/
   flex-direction: column;
   align-items: center;
   display: flex;
 }
-@media (min-width: 540px) {
-  .vision-box {
-    padding: 40px;
-    width: calc(50% - 80px);
-  }
-}
-@media (min-width: 960px) {
-  .vision-box {
-    width: calc(33% - 20px);
-  }
-}
-@media (min-width: 1026px) {
-  .vision-box {
-    width: calc(25% - 20px);
-  }
-}
+/*@media (min-width: 540px) {*/
+  /*.vision-box {*/
+    /*padding: 40px;*/
+    /*width: calc(50% - 80px);*/
+  /*}*/
+/*}*/
+/*@media (min-width: 960px) {*/
+  /*.vision-box {*/
+    /*width: calc(33% - 20px);*/
+  /*}*/
+/*}*/
+/*@media (min-width: 1026px) {*/
+  /*.vision-box {*/
+    /*width: calc(25% - 20px);*/
+  /*}*/
+/*}*/
 .vision-box h2 {
   font-weight: bold;
   font-size: 20px;
@@ -1001,12 +999,6 @@ desktop: "(min-width: 2562px)", */
   text-transform: uppercase;
 }
 
-.bannerText {
-  float: right;
-  width: 50%;
-  padding-top: 120px;
-}
-
 .aboutBanner h2 {
   /* background-color: lightgreen; */
   font-weight: bold;
@@ -1024,10 +1016,15 @@ desktop: "(min-width: 2562px)", */
 }
 
 .aboutStory {
-  /* background-color: rgb(210, 218, 190); */
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: left;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    padding-left: 5rem;
+    padding-right: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
 }
 
 .aboutStory h2 {
@@ -1059,14 +1056,21 @@ desktop: "(min-width: 2562px)", */
   margin-top: 100px;
   max-height: 400px;
 }
+.bannerContent  {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+}
 
 .bannerContent img {
+    width: 100%;
   border-radius: 40px;
   overflow: hidden;
 }
 
 .aboutStory img {
-  float: right;
+        width: 100%;
   border-radius: 40px;
   overflow: hidden;
   position: relative;
@@ -1470,7 +1474,7 @@ a.flex-item-middle2{
 }
 
 .vision-section p {
-  margin-left: 100px;
+  /*margin-left: 100px;*/
   font-family: "Lato", sans-serif;
   text-align: center;
   font-size: 20px;
@@ -1488,4 +1492,19 @@ a.flex-item-middle2{
 
 .carousel .control-prev.control-arrow {
   filter: invert(100);
+}
+
+@media (max-width: 1300px) {
+    .aboutStory {
+        grid-template-columns: 1fr;
+    padding-left:  .5rem;
+    padding-right: .5rem;
+    }
+
+
+.bannerContent  {
+    grid-template-columns:1fr;
+}
+
+
 }
