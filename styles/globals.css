@@ -1032,7 +1032,8 @@ desktop: "(min-width: 2562px)", */
   font-size: xx-large;
   padding: 10px;
   margin-left: 20px;
-  color: #5f5f5f;
+  color: black;
+  text-align: center;
 }
 
 .storyContent {
@@ -1048,6 +1049,7 @@ desktop: "(min-width: 2562px)", */
   font-size: 15px;
   line-height: 28px;
   color: #707070;
+  text-align: center;
 }
 
 .headerImg {
@@ -1228,7 +1230,7 @@ desktop: "(min-width: 2562px)", */
 .contactSet {
   position: relative;
   width: 100%;
-  margin: 30px 20px 40px 0;
+  margin: 30px 20px 40px 50px;
 }
 
 .contactSet:nth-child(6) {
