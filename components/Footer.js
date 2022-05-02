@@ -24,6 +24,12 @@ const Footer = () => {
            About Us 
            </a>
   </div>
+  <div className="flex-item-middle2">
+
+  <a target="_blank" href="/story"class ="flex-item-middle2">
+           Our Story 
+           </a>
+  </div>
   </div>
   <div className="flex-item-right">Contact Us
   <div className="flex-item-right2">
