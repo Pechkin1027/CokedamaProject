@@ -4,6 +4,7 @@ import PageLayout from "../../components/PageLayout";
 import Product from "../../components/ProductPage/Product";
 import OverView from "../../components/ProductPage/Overview";
 import Returns from "../../components/ProductPage/Returns";
+import Video from "../../components/ProductPage/Video";
 import { useRouter } from "next/router";
 
 export default function ProductPage({ data = {} }) {
@@ -19,6 +20,7 @@ export default function ProductPage({ data = {} }) {
       <MainCont>
         <Product data={data} handleAddToCart={handleAddToCart} />
         <OverView data={data} />
+        <Video data={data} />
         <Returns />
       </MainCont>
     </PageLayout>

@@ -4,7 +4,7 @@ const sgMail = require("@sendgrid/mail");
 
 export default function handler(req, res) {
   console.log(process.env.SENDGRID_API_KEY);
-sgMail.setApiKey("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");
+sgMail.setApiKey("apikeyhere");
 
   var customer_data = Object.create(req.body.inputs);
   console.log(req.body);
@@ -59,10 +59,10 @@ sgMail.setApiKey("SG.2_XntTFDSLC-r5lVaSjl6Q.iS2yInPynDIHHwwrTQ7L0gDU8o5fwl1B0jB3
   }
 
   const msg = {
-    to: ['cokedamainteriorplantscaping@gmail.com'],
-    from: 'cokedamainteriorplantscaping@gmail.com',
-  subject: "Cokedama Order Up",
-  text:
+      to: ['cokedamainteriorplantscaping@gmail.com'],
+      from: 'cokedamainteriorplantscaping@gmail.com',
+    subject: "Cokedama Order Up",
+    text:
       "Ruchira, your customer has ordered : " +
       message +
       "\nPlease observe the customers information and fulfil the order : \n" +
