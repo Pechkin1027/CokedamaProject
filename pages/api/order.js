@@ -59,10 +59,10 @@ sgMail.setApiKey("SG.2_XntTFDSLC-r5lVaSjl6Q.iS2yInPynDIHHwwrTQ7L0gDU8o5fwl1B0jB3
   }
 
   const msg = {
-      to: ['eliasshahsamand34@gmail.com'],
-      from: 'eliasshahsamand34@gmail.com',
-    subject: "Cokedama Order Up",
-    text:
+    to: ['cokedamainteriorplantscaping@gmail.com'],
+    from: 'cokedamainteriorplantscaping@gmail.com',
+  subject: "Cokedama Order Up",
+  text:
       "Ruchira, your customer has ordered : " +
       message +
       "\nPlease observe the customers information and fulfil the order : \n" +
