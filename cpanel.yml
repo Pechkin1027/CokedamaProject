@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/cokedama/public_html/cokedamaProject
+    - export DEPLOYPATH=/home/cokedama/site
     - /bin/cp * $DEPLOYPATH
