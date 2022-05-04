@@ -51,12 +51,15 @@ export default function home() {
   ];
   return (
     <PageLayout type={"HOME"}>
-    
+
     
     <img style={mystyle} src="shutterstock-1848217732.png"></img>
     
-    
-    
+    <div className = "banner">
+      <p>
+        This website is currently under construction.
+      </p>
+    </div>
     
     {/*
       <div>
@@ -84,6 +87,7 @@ export default function home() {
           <input type="submit" value="Shop Now" />
         </form>
       </div>
+      
       <ProductGrid title={"Categories"} type={"CATEGORY"} data={category1} />
       {/* <div className="bannerTwo">
         <form action="/category?type=AllProducts">

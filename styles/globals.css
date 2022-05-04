@@ -979,6 +979,23 @@ desktop: "(min-width: 2562px)", */
   text-align: center;
 }
 
+.banner {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #708238;
+  border-radius: 100px;
+}
+
+.banner p {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  color: black;
+  width: 80%;
+  margin-left: 8%;
+  font-weight: bold;
+}
+
 .pageHeader {
   text-align: center;
 }
