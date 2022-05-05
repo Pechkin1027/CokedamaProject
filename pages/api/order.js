@@ -59,8 +59,8 @@ export default function handler(req, res) {
   }
 
   const msg = {
-      to: ['cokedamainteriorplantscaping@gmail.com'],
-      from: 'cokedamainteriorplantscaping@gmail.com',
+      to: ['cokedamalk@gmail.com'],
+      from: 'cokedamalk@gmail.com',
     subject: "Cokedama Order Up",
     text:
       "Ruchira, your customer has ordered : " +
